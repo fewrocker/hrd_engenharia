@@ -1,1 +1,46 @@
-// Specific CSS for your home-page
+.conheca-mais {
+  margin: 2vh 0 2vh 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conheca-mais-btn {
+  height: 5vh;
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid rgba(150,150,150,1);
+  border-radius: 25px;
+  text-transform: uppercase;
+  padding: 40px 0;
+  color: rgba(150,150,150,1);
+
+  &:hover {
+    background-color: rgba(150,150,150,1);
+    color: white;
+    transition: 225ms ease;
+  }
+}
+
+@media (min-width: 720px) {
+  .conheca-mais-btn {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 720px) {
+  .conheca-mais-btn {
+    width: 60vw;
+  }
+}
+
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 1.1s ease forwards;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}

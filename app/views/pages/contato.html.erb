@@ -1,0 +1,62 @@
+<div class="wrapper-page wrapper-minheight">
+  <div class="container-page">
+
+  <h1 class="page-title">Contatos</h1>
+
+  <div class="row">
+    <div class="col-md-7 col-xs-12">
+      <%= render 'shared/contact' %>
+    </div>
+    <div class="col-md-5 col-xs-12">
+      <table id="contact-table-infos">
+        <tr class="contact-table-row">
+          <td class="contact-table-col-icon">
+            <i class="fas fa-phone"></i>
+          </td>
+          <td class="contact-table-col-data">
+            <h3 class="contact-table-info-title">Telefone</h3>
+            <h3 class="contact-table-info-info">(31) 3223-3223</h3>
+          </td>
+        </tr>
+        <tr class="contact-table-row">
+          <td class="contact-table-col-icon">
+            <i class="far fa-envelope"></i>
+          </td>
+          <td class="contact-table-col-data">
+            <h3 class="contact-table-info-title">E-mail</h3>
+            <h3 class="contact-table-info-info">contato@hrdengenharia.com.br</h3>
+            <h3 class="contact-table-info-info">comercial@hrdengenharia.com.br</h3>
+          </td>
+        </tr>
+        <tr class="contact-table-row">
+          <td class="contact-table-col-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </td>
+          <td class="contact-table-col-data">
+            <h3 class="contact-table-info-title">Endereço</h3>
+            <h3 class="contact-table-info-info">R. Monte Alegre, 49, loja 2 - Serra, Belo Horizonte, MG - 30240-230</h3>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id="map" style="height: 300px; width: 600px"></div>
+
+
+
+  </div>
+</div>
+
+
+<script>
+  import mapboxgl from 'mapbox-gl';
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiaHJkZW5nZW5oYXJpYSIsImEiOiJjanFoMXlkNm01bHd6NDNyMWxjeDhlZ3J3In0.hlkhvJvPPbEV_7jfDERBnw';
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [ -0.077, 51.533 ],
+    zoom: 12
+  });
+</script>

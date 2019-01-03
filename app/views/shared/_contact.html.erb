@@ -1,0 +1,75 @@
+<!--Section: Contact v.2-->
+<form class="mb-4">
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-11 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row contact-form-row">
+                    <div class="col-xs-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-nome" name="subject" class="form-control contact-form-field" placeholder="Nome">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row contact-form-row">
+
+                    <!--Grid column-->
+                    <div class="col-xs-12 col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-email" name="name" class="form-control contact-form-field" placeholder="Email">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xs-12 col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-telefone" name="email" class="form-control contact-form-field" placeholder="Telefone">
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row contact-form-row">
+                    <div class="col-xs-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="contact-assunto" name="subject" class="form-control contact-form-field" placeholder="Assunto">
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row contact-form-row">
+
+                    <!--Grid column-->
+                    <div class="col-xs-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="contact-mensagem" name="message" rows="2" class="form-control md-textarea contact-form-field" placeholder="Mensagem"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary contact-form-sendbtn" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            </div>
+        </div>
+
+    </div>
+
+</form>

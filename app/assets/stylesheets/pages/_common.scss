@@ -1,0 +1,77 @@
+h1,h2,h3,h4,h5 {
+  font-family: $roboto;
+}
+
+// Wrappers and containers
+
+.wrapper-page {
+  background-color: white;
+}
+
+.wrapper-minheight {
+  min-height: calc(100vh - 120px);
+}
+
+.container-page {
+
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-page{
+    padding: 40px 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper-page {
+    padding: 40px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-page {
+    padding: 40px 80px;
+  }
+}
+
+@media (min-width: 800px) {
+  .wrapper-content {
+    height-min: 150vh;
+    padding: 5vh 18vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper-content {
+    height-min: 150vh;
+    padding: 5vh 5vw;
+  }
+}
+
+.container-content {
+  padding: 40px 0;
+  border-top: 2px solid rgba(220,220,220,1);
+  border-bottom: 2px solid rgba(220,220,220,1);
+  margin: 5vh 0;
+}
+
+// Titles and text
+
+.page-title {
+  color: rgba(80,80,80,1);
+  text-transform: uppercase;
+  margin-bottom: 8vh;
+  font-size: 3em;
+  font-family: $roboto;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  color: rgba(80,80,80,1);
+  margin-bottom: 2vh;
+  font-size: 2.5em;
+  font-family: $roboto;
+  font-weight: 600;
+}
+
+

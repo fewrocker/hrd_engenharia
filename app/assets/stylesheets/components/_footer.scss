@@ -1,0 +1,77 @@
+/*Footer*/
+.footer-wrapper {
+  background: rgba(120,120,120,1);
+  color: rgba(200,200,200,0.8);
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 20vh;
+  padding: 30px 0;
+}
+
+.footer-container h2 {
+  margin-bottom: 2vh;
+  color: rgba(250,250,250,0.7);
+}
+
+.footer-container p {
+  color: rgba(220,220,220,0.7);
+}
+
+.footer-page-link {
+  width: 120px;
+
+  font-size: 1.2em;
+
+  a:active, a:link, a:visited {
+    text-decoration: none;
+
+    color: rgba(255,255,255,0.6);
+  }
+
+  a:hover {
+    text-decoration: none;
+
+    color: rgba(255,255,255,1);
+
+    transition: 1000ms  ease;
+  }
+}
+
+.footer-list h3 {
+  font-weight: bold;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 2vh;
+}
+
+.footer-list p {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.footer-list p:hover {
+  cursor: pointer;
+  opacity: 1;
+  color: rgba(255,255,255,1);
+}
+
+.copyright-text {
+  margin-top: 4vh;
+}
+
+//Mobile changes
+@media (max-width: 800px) {
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .copyright-text p {
+    margin-bottom: 40px;
+  }
+
+  .footer-container {
+    margin: 0 10vw;
+    padding: 10px 0;
+  }
+}

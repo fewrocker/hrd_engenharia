@@ -1,0 +1,29 @@
+.equipe-cada-membro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.equipe-cada-membro-left {
+
+  a:active, a:link, a:visited {
+    text-decoration: none;
+
+    color: $blue;
+  }
+}
+
+.equipe-cada-membro-right {
+
+}
+
+.equipe-cada-membro-foto {
+  height: 300px;
+}
+
+.linkedin-links {
+  font-size: 30px;
+
+  margin-top: 60px;
+}
+

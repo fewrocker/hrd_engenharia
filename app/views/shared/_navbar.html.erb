@@ -1,0 +1,29 @@
+<% if @navbar_type == 'home' %>
+  <div class="navbar-hrd navbar-home">
+<% else %>
+  <div class="navbar-hrd navbar-normal">
+<% end %>
+
+  <!-- Logo -->
+  <%= link_to "/home" do %>
+    <%= image_tag 'HRD logo.jpg', class: 'navbar-logo' %>
+  <% end %>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= render 'shared/links-a' %>
+
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" role="button"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <%= render 'shared/links-li' %>
+      </ul>
+    </div>
+  </div>
+</div>
+
