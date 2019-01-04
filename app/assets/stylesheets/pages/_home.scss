@@ -17,14 +17,31 @@
   text-transform: uppercase;
   color: rgba(150,150,150,1);
 
-  width: auto;
-  padding: 30px 50px;
-  min-padding: 30px 20px;
-
   &:hover {
     background-color: rgba(150,150,150,1);
     color: white;
     transition: 150ms ease;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .conheca-mais-btn {
+    padding: 40px 8vw;
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .conheca-mais-btn {
+    padding: 40px 5vw;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conheca-mais-btn {
+    padding: 40px 2vw;
+    font-size: 0.8em;
   }
 }
 
