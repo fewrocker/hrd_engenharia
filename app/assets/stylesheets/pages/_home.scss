@@ -1,38 +1,30 @@
-.conheca-mais {
-  margin: 2vh 0 2vh 0;
+.home-about-buttons {
+  margin-top: 7vh;
+  margin-bottom:  7vh;
+
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .conheca-mais-btn {
-  height: 5vh;
-  margin-top: 2vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   border: 2px solid rgba(150,150,150,1);
   border-radius: 25px;
   text-transform: uppercase;
-  padding: 40px 0;
   color: rgba(150,150,150,1);
+
+  width: auto;
+  padding: 30px 50px;
+  min-padding: 30px 20px;
 
   &:hover {
     background-color: rgba(150,150,150,1);
     color: white;
-    transition: 225ms ease;
-  }
-}
-
-@media (min-width: 720px) {
-  .conheca-mais-btn {
-    width: 20vw;
-  }
-}
-
-@media (max-width: 720px) {
-  .conheca-mais-btn {
-    width: 60vw;
+    transition: 150ms ease;
   }
 }
 

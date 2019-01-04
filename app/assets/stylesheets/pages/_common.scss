@@ -18,34 +18,31 @@ h1,h2,h3,h4,h5 {
 
 @media screen and (min-width: 1200px) {
   .wrapper-page{
-    padding: 40px 300px;
+    padding: 40px 250px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .wrapper-page {
-    padding: 40px 80px;
+    padding: 40px 120px;
   }
-}
-
-@media screen and (max-width: 768px) {
-  .wrapper-page {
-    padding: 40px 80px;
-  }
-}
-
-@media (min-width: 800px) {
   .wrapper-content {
     height-min: 150vh;
     padding: 5vh 18vw;
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  .wrapper-page {
+    padding: 40px 50px;
+  }
+
   .wrapper-content {
     height-min: 150vh;
     padding: 5vh 5vw;
   }
+
+
 }
 
 .container-content {
@@ -60,7 +57,7 @@ h1,h2,h3,h4,h5 {
 .page-title {
   color: rgba(80,80,80,1);
   text-transform: uppercase;
-  margin-bottom: 8vh;
+  margin-bottom: 4vh;
   font-size: 3em;
   font-family: $roboto;
   font-weight: 700;
@@ -74,4 +71,11 @@ h1,h2,h3,h4,h5 {
   font-weight: 600;
 }
 
+.page-description {
+  color: rgba(50,50,50,1);
+  margin-bottom: 1vh;
+  font-size: 1.2em;
+  font-family: $roboto;
+  text-align:  justify;
+}
 
