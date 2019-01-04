@@ -8,7 +8,7 @@ bannerFirstLine = document.getElementsByClassName("main-title-text-line")[0]
 bannerSecondLine = document.getElementsByClassName("main-title-text-line")[1]
 bannerThirdLine = document.getElementsByClassName("main-title-text-line")[2]
 
-bannerEndY = document.getElementsByClassName("wrapper-homepage-solutions")[0].offsetTop;
+bannerEndY = document.getElementsByClassName("wrapper-page")[0].offsetTop;
 
 // solutionCards = document.getElementsByClassName("solutions-card")
 
@@ -22,11 +22,13 @@ bannerEndY = document.getElementsByClassName("wrapper-homepage-solutions")[0].of
 
 navbarComponent = document.getElementsByClassName("navbar-home")[0]
 
+l(navbarComponent)
+
 body = document.getElementsByTagName("body")[0]
 
 //Navbar scroll solid-tranparent
 window.addEventListener('scroll', function() {
-  if (window.pageYOffset > bannerEndY - 100) {
+  if (window.pageYOffset > bannerEndY - 300) {
     navbarComponent.classList.add("solid-navbar")
   } else {
     navbarComponent.classList.remove("solid-navbar")
