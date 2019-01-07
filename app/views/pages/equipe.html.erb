@@ -1,35 +1,66 @@
-<div class="wrapper-page wrapper-minheight">
-  <div class="container-page">
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-minheight">
+    <div class="container-page">
 
-    <h1 class="page-title">Nossa equipe</h1>
+      <h1 class="page-title">Nossa equipe</h1>
 
-    <!-- Inicio Membro: Ronaldo Lelis Santos -->
-    <div class="equipe-cada-membro">
-      <div class="equipe-cada-membro-left text-center">
-        <%= link_to 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/' do %>
-          <%= image_tag 'equipe-ronaldo', class: 'equipe-cada-membro-foto' %>
-          <h2 class="linkedin-links"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
-        <% end %>
-      </div>
+      <% (@membros_nomes.length).times do |membro| %>
+        <div class="equipe-cada-membro">
+          <div class="equipe-cada-membro-left text-center">
+            <%= link_to @membros_linkedin[membro] do %>
+              <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
+              <h2 class="linkedin-links"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
+            <% end %>
+          </div>
 
-      <div class="equipe-cada-membro-mid">
-      </div>
+          <div class="equipe-cada-membro-mid">
+          </div>
 
-      <div class="equipe-cada-membro-right">
-        <h2 class="equipe-cada-membro-nome">
-          Ronaldo Lelis Santos
-        </h2>
-        <p class="equipe-cada-membro-descricao">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar
-        </p>
-      </div>
+          <div class="equipe-cada-membro-right">
+            <h2 class="equipe-cada-membro-nome">
+              <%= @membros_nomes[membro] %>
+            </h2>
+            <p class="equipe-cada-membro-descricao">
+              <%= @membros_descricao[membro] %>
+            </p>
+            <%= link_to "download/#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo' do  %>
+              <i class="fa fa-file-download"></i>Currículo
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+
+
     </div>
-    <!-- Fim Membro: Ronaldo Lelis Santos -->
+  </div>
+</div>
 
+<div class="page-mobile">
+  <div class="wrapper-page wrapper-minheight">
+    <div class="container-page">
 
+      <h1 class="page-title">Nossa equipe</h1>
 
+      <% (@membros_nomes.length).times do |membro| %>
+        <div class="equipe-cada-membro">
+          <div class="row">
+            <div class="col-md-3 col-xs-12 text-center">
+              <%= link_to @membros_linkedin[membro] do %>
+                <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
+              <% end %>
+            </div>
+            <div class="col-md-9 col-xs-12">
+              <h2 class="equipe-cada-membro-nome">
+                <%= @membros_nomes[membro] %>
+              </h2>
+              <p class="equipe-cada-membro-descricao">
+                <%= @membros_descricao[membro] %>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
 
-
-
+    </div>
   </div>
 </div>

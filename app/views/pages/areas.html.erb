@@ -1,0 +1,26 @@
+<div class="wrapper-page wrapper-minheight">
+  <div class="container-page">
+    <h1 class="page-title">Areas de atuação</h1>
+
+    <p class="page-content">
+      Selecione uma das áreas abaixo para obter mais informações:
+    </p>
+
+    <br>
+
+    <div class="row" style="width: 100%; margin-left: auto; margin-right: auto;">
+      <% @areas_nomes.length.times do |area| %>
+        <div class="col-xs-12 col-lg-6">
+          <%= link_to "/areas" + @areas_links[area] do %>
+            <div class="card-solutions card-solutions-big" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
+              <div class="card-solutions-description">
+                <h2><%= @areas_nomes[area] %></h2>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

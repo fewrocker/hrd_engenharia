@@ -6,14 +6,44 @@ h1,h2,h3,h4,h5 {
 
 .wrapper-page {
   background-color: white;
-}
-
-.wrapper-minheight {
   min-height: calc(100vh - 120px);
 }
 
+
 .container-page {
 
+}
+
+.wrapper-error {
+  background-color: rgba(230,230,230,1);
+
+  min-height: calc(100vh - 326px - 130px);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-error {
+  background-color: white;
+
+  padding: 30px;
+
+  border: 1px solid $azul;
+  box-shadow: 1px 1px rgba(100,100,100,1);
+
+  h1 {
+    color: $azul;
+    font-size: 40px;
+
+    margin-bottom: 30px;
+  }
+  p {
+    color: rgba(80,80,80,1);
+    font-size: 18px;
+
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

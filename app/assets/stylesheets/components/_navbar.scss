@@ -63,7 +63,10 @@
 }
 
 .navbar-logo {
-  height: 120px;
+  height: 100px;
+
+  position: absolute;
+  bottom: 15px;
 }
 
 /* Dropdown menu */
@@ -98,6 +101,18 @@
 }
 
 .dropdown-toggle {
-  color: gold;
-  margin-top: 20px;
+  color: rgba(200,200,200,1);
+}
+
+
+// Mobile adaptations
+@media screen and (max-width: 400px) {
+  .navbar-logo {
+    height: 50px;
+  }
+
+  .navbar-hrd {
+    height: 80px;
+  }
+
 }

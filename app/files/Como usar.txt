@@ -1,0 +1,2 @@
+Curriculos:
+Devem ter o formato de nome (primeiro nome da pessoa, tudo minusculo).pdf

@@ -1,33 +1,15 @@
-#contact-table-infos {
-  background: white;
-}
-
-.contact-table-col-icon {
-  height: 140px;
-  width: 100px;
-
-  padding-left: 30px;
-
-  i {
-    font-size: 50px;
-    color: $azul;
-  }
-}
-
-.contact-table-col-data {
-  height: 140px;
-  width: 500px;
-
-  padding-left: 30px;
-}
-
-.contact-table-info-title {
-  font-size: 25px;
-  font-weight: bold;
-
+.contact-info-header {
   color: $azul;
+  font-size: 2em;
 }
 
-.contact-table-info-info {
-  font-size: 20px;
+.contact-info-content {
+  color: rgba(80,80,80,1);
+  font-size: 1em;
+
+  margin-bottom: 40px;
+}
+
+.contact-infos {
+  text-align: left;
 }
