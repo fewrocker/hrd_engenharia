@@ -1,3 +1,6 @@
+// This is the CSS for the carousel template
+// A lot of adjustments on height and width has to be made in order to prevent bugs and overflows
+
 // Set this to the name of the wrapper of the slider
 .wrapper-homepage-slideshow {
   height: 100vh;
@@ -9,9 +12,13 @@
 
   .row {
     height: 100%;
+    width: 100%;
+    margin: 0;
 
     .col-xs-12 {
       height: 100%;
+      width: 100%;
+      padding: 0;
     }
   }
 }
