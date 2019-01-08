@@ -162,9 +162,7 @@ class PagesController < ApplicationController
       # Nome da foto do membro dentro da pasta app/assets/images
       @membros_fotos << 'equipe-ronaldo.png'
       # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Graduado em engenharia mecânica pela Universidade Federal de Minas Gerais (UFMG, 2017), também estudou um ano na Johns Hopkins University e participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. No momento, está perseguindo uma pós-graduação em gestão de negócios (MBA) pelo IBMEC-MG.
-
-Atuou com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
+      @membros_descricao << 'Graduado em engenharia mecânica pela Universidade Federal de Minas Gerais (UFMG, 2017), também estudou um ano na Johns Hopkins University e participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. No momento, está perseguindo uma pós-graduação em gestão de negócios (MBA) pelo IBMEC-MG. Atuou com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
       # ----------------------------------------------------
