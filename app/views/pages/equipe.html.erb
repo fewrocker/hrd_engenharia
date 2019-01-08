@@ -7,7 +7,7 @@
       <% (@membros_nomes.length).times do |membro| %>
         <div class="equipe-cada-membro">
           <div class="equipe-cada-membro-left text-center">
-            <%= link_to @membros_linkedin[membro] do %>
+            <%= link_to @membros_linkedin[membro], target: :_blank do %>
               <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
               <h2 class="linkedin-links"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
             <% end %>
@@ -23,7 +23,7 @@
             <p class="equipe-cada-membro-descricao">
               <%= @membros_descricao[membro] %>
             </p>
-            <%= link_to "download/#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo' do  %>
+            <%= link_to "download/#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo', target: :_blank do  %>
               <i class="fa fa-file-download"></i>Currículo
             <% end %>
           </div>
@@ -41,11 +41,15 @@
 
       <h1 class="page-title">Nossa equipe</h1>
 
+      <p class="page-content" style="text-align: justify; color: rgba(130,130,130,1); text-indent: 0;">(Você pode tocar sobre a foto de um membro para acessar seu LinkedIn)</p>
+
+      <br>
+
       <% (@membros_nomes.length).times do |membro| %>
         <div class="equipe-cada-membro">
           <div class="row">
             <div class="col-md-3 col-xs-12 text-center">
-              <%= link_to @membros_linkedin[membro] do %>
+              <%= link_to @membros_linkedin[membro], target: :_blank do %>
                 <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
               <% end %>
             </div>
@@ -56,6 +60,11 @@
               <p class="equipe-cada-membro-descricao">
                 <%= @membros_descricao[membro] %>
               </p>
+              <div class="equipe-cada-membro-downloadcurriculo-mobile-div text-center">
+                <%= link_to "download/#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo-mobile', target: :_blank do  %>
+                  <i class="fa fa-file-download"></i>Currículo
+                <% end %>
+              </div>
             </div>
           </div>
         </div>

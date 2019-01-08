@@ -41,6 +41,10 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .equipe-cada-membro-foto {width: 100%;}
+}
+
 .linkedin-links {
   font-size: 30px;
 
@@ -54,8 +58,8 @@
 }
 
 .equipe-cada-membro-descricao {
-  @media screen and (min-width: 600px) {font-size: 20px;}
-  @media screen and (max-width: 600px) {font-size: 15px;}
+  @media screen and (min-width: 768px) {font-size: 20px;}
+  @media screen and (max-width: 768px) {font-size: 15px;}
 
   text-align: justify;
 }
@@ -65,13 +69,30 @@
   bottom: 10px;
   right:  30px;
 
+  font-size: 30px;
+
   color: $azul;
+}
+
+.equipe-cada-membro-downloadcurriculo-mobile-div {
+  border: 1px solid $azul;
+  padding: 10px 0;
+
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+}
+
+.equipe-cada-membro-downloadcurriculo-mobile {
+  color: $azul;
+
+  width: 100%;
 }
 
 .fa-file-download {
   color: $azul;
   margin-right:  10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 
