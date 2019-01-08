@@ -1,7 +1,6 @@
 class PagesController < ApplicationController
   def home
     redirect_to '/home' if params[:page].nil?
-
   end
 
   def show
@@ -37,8 +36,6 @@ class PagesController < ApplicationController
       @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
       @slides_button  << "Conheça a empresa"
       @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
-
-
 
       # -----------------------------------------------------
       # Areas de atuacao
@@ -165,7 +162,9 @@ class PagesController < ApplicationController
       # Nome da foto do membro dentro da pasta app/assets/images
       @membros_fotos << 'equipe-ronaldo.png'
       # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar'
+      @membros_descricao << 'Graduado em engenharia mecânica pela Universidade Federal de Minas Gerais (UFMG, 2017), também estudou um ano na Johns Hopkins University e participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. No momento, está perseguindo uma pós-graduação em gestão de negócios (MBA) pelo IBMEC-MG.
+
+Atuou com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
       # ----------------------------------------------------

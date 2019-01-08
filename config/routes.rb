@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :drops
   root to: 'pages#home'
 
+  # Routing for download files from folder files
   match 'download/:filename', to: 'files#download', as: 'download', via: :get
 
   Rails.application.routes.draw do
