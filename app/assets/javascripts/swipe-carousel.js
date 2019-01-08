@@ -57,19 +57,9 @@ function detectswipe(el,func) {
     }
 
 // Obs: carousel element must be the one with class .carousel
+// This function will cycle slides left and right with user swipe left and right
 function swipeFunction(element,direction) {
-  // if (direction === 'l') {
-  //   carousel.carousel("prev");
-  //   l('go to next')
-  // }
-  // if (direction === 'r') {
-  //   carousel.carousel("next");
-  //   l('go to prev')
-  // }
-
   carousel = document.getElementById('home-slider');
-  carousel.dataInterval = 1000
-  l(carousel)
 
   slideCount = 0
   // Get which slide is active
@@ -80,13 +70,20 @@ function swipeFunction(element,direction) {
     slideCount += 1
   });
 
-  l(activeSlide)
-
   // Get which slide will become active
-  if (activeSlide === carouselSlides.length - 1) {
-    nextSlide = 0
+
+  if (direction === 'l') {
+    if (activeSlide === carouselSlides.length - 1) {
+      nextSlide = 0
+    } else {
+      nextSlide = activeSlide + 1
+    }
   } else {
-    nextSlide = activeSlide + 1
+    if (activeSlide === 0) {
+      nextSlide = carouselSlides.length - 1
+    } else {
+      nextSlide = activeSlide - 1
+    }
   }
 
   carouselSlides[activeSlide].classList.remove('active')
