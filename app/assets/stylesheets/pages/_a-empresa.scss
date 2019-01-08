@@ -9,3 +9,15 @@
     text-align:  justify;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .valores-lista {
+
+  li {
+    font-size: 0.9em;
+    margin-bottom: 1vh;
+    font-family: $roboto;
+    text-align:  justify;
+  }
+}
+}

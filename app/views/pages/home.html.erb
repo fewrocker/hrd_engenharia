@@ -24,53 +24,24 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item carousel-home-item active" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
-              <div class="carousel-caption">
-                <h1 class="carousel-slide-title">
-                  A empresa
-                </h1>
-                <p class="carousel-slide-description">
-                  A HRD Engenharia atua lado a lado com seus parceiros para apresentar soluções técnicas de alto nível que mitigam riscos e agregam valor aos seus ativos
-                </p>
-                <%= link_to '/a-empresa' do %>
-                  <div class="carousel-slide-button btn">
-                    Conheça a empresa
-                  </div>
-                <% end %>
-              </div>
-            </div>
 
-            <div class="item carousel-home-item" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
-              <div class="carousel-caption">
-                <h1 class="carousel-slide-title">
-                  Áreas de atuação
-                </h1>
-                <p class="carousel-slide-description">
-                  A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas
-                </p>
-                <%= link_to '/areas' do %>
-                  <div class="carousel-slide-button btn">
-                    Conheça nossos serviços
-                  </div>
-                <% end %>
+            <% @slides_title.length.times do |slide| %>
+              <div class="item carousel-home-item <%= slide == 0 ? "active" : ""%>" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= @slides_image[slide] %>');">
+                <div class="carousel-caption">
+                  <h1 class="carousel-slide-title">
+                    <%= @slides_title[slide] %>
+                  </h1>
+                  <p class="carousel-slide-description">
+                    <%= @slides_description[slide] %>
+                  </p>
+                  <%= link_to '/equipe' do %>
+                    <div class="carousel-slide-button btn">
+                      <%= @slides_button[slide] %>
+                    </div>
+                  <% end %>
+                </div>
               </div>
-            </div>
-
-            <div class="item carousel-home-item" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
-              <div class="carousel-caption">
-                <h1 class="carousel-slide-title">
-                  A equipe
-                </h1>
-                <p class="carousel-slide-description">
-                  A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação
-                </p>
-                <%= link_to '/equipe' do %>
-                  <div class="carousel-slide-button btn">
-                    Conheça nossa equipe
-                  </div>
-                <% end %>
-              </div>
-            </div>
+            <% end %>
           </div>
 
           <!-- Controls of next and previous buttons -->
@@ -129,7 +100,6 @@
         </div>
       <% end %>
     </div>
-
 
   </div>
 </div>
