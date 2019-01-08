@@ -1,10 +1,87 @@
-<div class="wrapper-homepage-banner">
-  <div class="container-homepage-banner">
+<!-- <div class="wrapper-homepage-banner"> -->
+<!--   <div class="container-homepage-banner">
     <div class="intro-banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
       <div class="main-title-text">
         <h1 class="main-title-text-line">-</h1>
         <h1 class="main-title-text-line">-</h1>
         <h1 class="main-title-text-line">---</h1>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="wrapper-homepage-slideshow">
+  <div class="container-home-slideshow">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="home-slider" class="carousel slide" data-ride="carousel" data-interval="6000" data-wrap="true" data-pause="false">
+          <!-- Dot indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#home-slider" data-slide-to="0" class="active"></li>
+            <li data-target="#home-slider" data-slide-to="1"></li>
+            <li data-target="#home-slider" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item carousel-home-item active" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
+              <div class="carousel-caption">
+                <h1 class="carousel-slide-title">
+                  A empresa
+                </h1>
+                <p class="carousel-slide-description">
+                  A HRD Engenharia atua lado a lado com seus parceiros para apresentar soluções técnicas de alto nível que mitigam riscos e agregam valor aos seus ativos
+                </p>
+                <%= link_to '/a-empresa' do %>
+                  <div class="carousel-slide-button btn">
+                    Conheça a empresa
+                  </div>
+                <% end %>
+              </div>
+            </div>
+
+            <div class="item carousel-home-item" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
+              <div class="carousel-caption">
+                <h1 class="carousel-slide-title">
+                  Áreas de atuação
+                </h1>
+                <p class="carousel-slide-description">
+                  A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas
+                </p>
+                <%= link_to '/areas' do %>
+                  <div class="carousel-slide-button btn">
+                    Conheça nossos serviços
+                  </div>
+                <% end %>
+              </div>
+            </div>
+
+            <div class="item carousel-home-item" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg');">
+              <div class="carousel-caption">
+                <h1 class="carousel-slide-title">
+                  A equipe
+                </h1>
+                <p class="carousel-slide-description">
+                  A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação
+                </p>
+                <%= link_to '/equipe' do %>
+                  <div class="carousel-slide-button btn">
+                    Conheça nossa equipe
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls of next and previous buttons -->
+          <a href="#home-slider" class="left carousel-control" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+          <a href="#home-slider" class="right carousel-control" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+
+        </div>
       </div>
     </div>
   </div>

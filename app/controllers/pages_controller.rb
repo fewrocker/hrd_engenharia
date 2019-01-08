@@ -5,8 +5,6 @@ class PagesController < ApplicationController
     end
 
     def show
-      @navbar_type = params[:page] == 'home' ? 'home' : 'normal'
-
       # Informacoes relacionadas a pagina 'home'
       if params[:page] == 'home' || 'areas'
         @areas_nomes = []

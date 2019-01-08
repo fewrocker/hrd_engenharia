@@ -36,10 +36,4 @@ ActiveRecord::Schema.define(version: 2019_01_07_190048) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "drops", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

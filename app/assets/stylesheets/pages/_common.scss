@@ -6,7 +6,8 @@ h1,h2,h3,h4,h5 {
 
 .wrapper-page {
   background-color: white;
-  min-height: calc(100vh - 120px);
+
+  min-height: 100vh;
 }
 
 
@@ -48,13 +49,13 @@ h1,h2,h3,h4,h5 {
 
 @media screen and (min-width: 1200px) {
   .wrapper-page{
-    padding: 40px 250px;
+    padding: 170px 250px 40px 250px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .wrapper-page {
-    padding: 40px 80px;
+    padding: 170px 80px 40px 80px;
   }
   .wrapper-content {
     height-min: 150vh;
@@ -64,7 +65,7 @@ h1,h2,h3,h4,h5 {
 
 @media screen and (max-width: 768px) {
   .wrapper-page {
-    padding: 40px 25px;
+    padding: 170px 25px 40px 25px;
   }
 
   .wrapper-content {
@@ -107,5 +108,14 @@ h1,h2,h3,h4,h5 {
   font-size: 1.2em;
   font-family: $roboto;
   text-align:  justify;
+}
+
+.page-content {
+  color: rgba(50,50,50,1);
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+  font-family: $roboto;
+  text-align:  justify;
+  text-indent: 1.5em;
 }
 

@@ -6,7 +6,10 @@
   padding: 10px 30px 0px 30px;
   display: flex;
   align-items: center;
+  position: fixed;
   justify-content: space-between;
+
+  background: $azul-logo;
 
   border-bottom: none;
 
@@ -15,22 +18,8 @@
   a:link, a:hover, a:active, a:visited {
     text-decoration: none;
   }
-}
 
-.navbar-home {
-  background: transparent;
-  position: fixed;
-  transition: background-color 800ms ease 0s;
-}
-
-.navbar-normal {
-  background: $azul-logo;
-}
-
-.solid-navbar {
-  background: $azul-logo;
-  transition: background-color 200ms ease;
-  z-index: 90;
+  z-index: 99;
 }
 
 /* Right section */

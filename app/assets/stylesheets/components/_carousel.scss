@@ -1,0 +1,72 @@
+// Set this to the name of the wrapper of the slider
+.wrapper-homepage-slideshow {
+  height: 100vh;
+}
+
+// Set this to the name of the container of the slider
+.container-home-slideshow {
+  height: 100%;
+
+  .row {
+    height: 100%;
+
+    .col-xs-12 {
+      height: 100%;
+    }
+  }
+}
+
+// Set this to the name of the id of the slider
+#home-slider {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-home-item {
+  background-size: cover !important;
+  height: 100%;
+
+  img {
+    height: 100%;
+
+    background-size: cover;
+  }
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+}
+
+.carousel-slide-title {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin-bottom: 40px;
+}
+
+.carousel-slide-description {
+  font-size: 30px;
+
+  margin-bottom: 40px;
+}
+
+.carousel-slide-button {
+  padding: 20px 50px;
+
+  color: white;
+
+  border: 2px solid white;
+  border-radius: 30px;
+
+  font-size: 30px;
+
+  &:hover {
+    background-color: white;
+  }
+}
+
+
