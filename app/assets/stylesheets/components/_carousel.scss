@@ -102,5 +102,25 @@
   }
 }
 
+// Styling carousel indicators (modify width, height, border-radius etc to get dots, lines, etc)
+.carousel-indicators li {
+  width: 50px;
+  height: 6px;
+
+  border-radius: 0;
+}
+.carousel-indicators li.active {
+  width: 50px;
+  height: 6px;
+
+  border-radius: 0;
+
+  border-top: 6px solid white;
+}
+
+
+
+
+
 
 
