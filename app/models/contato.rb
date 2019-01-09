@@ -1,2 +1,3 @@
 class Contato < ApplicationRecord
+
 end
