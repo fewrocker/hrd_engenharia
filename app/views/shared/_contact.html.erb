@@ -1,13 +1,45 @@
-<!--Section: Contact v.2-->
-<form action="/contato" method="post" class="mb-4 contact-form" id="contact-form">
+<!-- This form includes validations written down below that gives feedback to user on submit -->
+<!-- Current validations: all fields required -->
+<!-- The styling is already on this file -->
+
+<style>
+.contact-form {
+  margin-bottom: 50px;
+}
+
+.contact-form-field {
+  border: none;
+  box-shadow: none;
+
+  height: 4em;
+
+  margin-bottom: 10px;
+
+  border-bottom: 2px solid rgba(23,78,138,1);
+}
+
+#contact-mensagem {
+  min-height: 150px;
+  min-width: 100%;
+  max-height: 150px;
+  max-width: 100%;
+}
+
+.contact-form-sendbtn {
+  margin-top: 50px;
+  width: 200px;
+}
+
+</style>
+
+<form action="/contato" method="post" class="mb-4 contact-form" id="contact-form" onsubmit="return validateForm()">
+
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
     <div class="row">
 
         <!--Grid column-->
         <div class="col-md-11 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
                 <!--Grid row-->
                 <div class="row contact-form-row">
                     <div class="col-xs-12">
@@ -67,10 +99,80 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary contact-form-sendbtn" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+              <input type="submit" class="btn btn-primary contact-form-sendbtn" value="Enviar">
             </div>
+
+
         </div>
 
     </div>
 
 </form>
+
+
+<!-- The code below handles the validations on the form -->
+
+<style>
+.invalid {
+  animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+
+  border-bottom: 2px solid red;
+  background: rgba(255,220,220,1);
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+</style>
+
+
+<script>
+
+// Fields that will be validated
+nome = document.getElementById('contact-nome')
+email = document.getElementById('contact-email')
+telefone = document.getElementById('contact-telefone')
+assunto = document.getElementById('contact-assunto')
+mensagem = document.getElementById('contact-mensagem')
+formFields = document.getElementsByClassName('contact-form-field')
+
+// Validation ends when input is focused
+Array.prototype.forEach.call(formFields, function(el) {
+  el.addEventListener('focus', function() {
+    el.classList.remove('invalid')
+  });
+});
+
+function validateForm() {
+  validationResult = true
+
+  // Requirement validations
+  // Add conditions that make validationResult false when not met
+  Array.prototype.forEach.call(formFields, function(field) {
+    if (field.value == "") {
+      field.classList.add('invalid')
+      validationResult = false
+    }
+  });
+
+  return validationResult
+}
+
+</script>

@@ -1,5 +1,12 @@
 <div class="wrapper-page wrapper-minheight">
+
   <div class="container-page">
+
+    <% if params[:email] == 'sent' %>
+      <div class="alert-email-sent">
+        <p>Seu e-mail foi enviado com sucesso. Entraremos em contato em breve!</p>
+      </div>
+    <% end %>
 
     <h1 class="page-title">Contatos</h1>
 
