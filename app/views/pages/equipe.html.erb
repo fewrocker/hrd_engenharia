@@ -7,8 +7,11 @@
       <% (@membros_nomes.length).times do |membro| %>
         <div class="equipe-cada-membro">
           <div class="equipe-cada-membro-left text-center">
-            <%= link_to @membros_linkedin[membro], target: :_blank do %>
-              <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
+            <%= link_to @membros_linkedin[membro],target: :_blank do %>
+              <div class="equipe-linkedin-div-pictures">
+                <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
+                <%= image_tag 'logo-white-background.png', class: 'equipe-cada-membro-foto-hrdlogo' %>
+              </div>
               <h2 class="linkedin-links"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
             <% end %>
           </div>
@@ -49,9 +52,12 @@
         <div class="equipe-cada-membro">
           <div class="row">
             <div class="col-md-3 col-xs-12 text-center">
-              <%= link_to @membros_linkedin[membro], target: :_blank do %>
+            <%= link_to @membros_linkedin[membro],target: :_blank do %>
+              <div class="equipe-linkedin-div-pictures">
                 <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
-              <% end %>
+                <%= image_tag 'logo-white-background.png', class: 'equipe-cada-membro-foto-hrdlogo' %>
+              </div>
+            <% end %>
             </div>
             <div class="col-md-9 col-xs-12">
               <h2 class="equipe-cada-membro-nome">

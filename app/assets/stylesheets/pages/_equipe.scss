@@ -25,6 +25,26 @@
   }
 }
 
+.equipe-linkedin-div-pictures {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.equipe-cada-membro-foto {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.equipe-cada-membro-foto-hrdlogo {
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+
+  width: 35%;
+}
+
 .equipe-cada-membro-mid {
   flex: 0 0 10%;
 }
@@ -43,6 +63,15 @@
 
 @media screen and (max-width: 768px) {
   .equipe-cada-membro-foto {width: 100%;}
+
+  @media screen and (max-width: 768px) {
+    .equipe-cada-membro-foto-hrdlogo {
+      bottom: 8%;
+      right: 5%;
+
+      width: 35%;
+    }
+  }
 }
 
 .linkedin-links {

@@ -34,7 +34,7 @@ class PagesController < ApplicationController
       # Slide 3
       @slides_title << "A equipe"
       @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
-      @slides_button  << "Conheça a empresa"
+      @slides_button  << "Conheça nossa equipe"
       @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
 
       # -----------------------------------------------------
