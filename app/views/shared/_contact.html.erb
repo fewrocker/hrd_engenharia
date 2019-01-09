@@ -1,5 +1,6 @@
 <!--Section: Contact v.2-->
-<form class="mb-4 contact-form">
+<form action="/contato" method="post" class="mb-4 contact-form" id="contact-form">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
     <div class="row">
 

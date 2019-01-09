@@ -13,18 +13,15 @@ contactFields = document.getElementsByClassName('contact-form-field')
 navbar = document.getElementsByClassName('navbar-hrd')[0]
 
 // On load
-
 Array.prototype.forEach.call(contactFields, function(el) {
   el.addEventListener('focusout', function() {
     if (window.innerWidth < 400) {
-      l('oi')
       navbar.style.display = ''
     }
   });
 
   el.addEventListener('focus', function() {
     if (window.innerWidth < 400) {
-      l('oi')
       navbar.style.display = 'none'
     }
   });

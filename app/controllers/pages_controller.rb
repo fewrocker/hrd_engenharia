@@ -177,6 +177,18 @@ class PagesController < ApplicationController
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/diego-correia-martins-679743178/'
       # ----------------------------------------------------
+
+      # ----------------------------------------------------
+      # Nome do membro (do jeito que ira aparecer)
+      @membros_nomes << 'Hugo Gatti'
+      # Nome da foto do membro dentro da pasta app/assets/images
+      @membros_fotos << 'equipe-hugo.png'
+      # Descricao sobre o membro (do jeito que ira aparecer)
+      @membros_descricao << 'Engenheiro mecânico com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
+      # Link do linkedin do membro
+      @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-9594333a/'
+      # ----------------------------------------------------
+
     end
 
     # Renderiza paginas do tipo /(nome_da_pagina)
