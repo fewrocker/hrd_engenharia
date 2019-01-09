@@ -7,8 +7,8 @@
 
   width: 100%;
 
-  margin-bottom: 10px;
-  padding: 30px;
+  padding: 20px;
+  margin-bottom: 5px;
 
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $azul-claro 100%);
 
@@ -74,12 +74,6 @@
   }
 }
 
-.linkedin-links {
-  font-size: 30px;
-
-  color: $azul;
-}
-
 .equipe-cada-membro-nome {
   font-size: 30px;
   font-weight: 600;
@@ -93,22 +87,64 @@
   text-align: justify;
 }
 
-.equipe-cada-membro-downloadcurriculo {
+.equipe-cada-membro-links {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   right:  30px;
 
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a:active, a:link, a:visited {
+    text-decoration: none;
+
+    color: $azul;
+  }
+}
+
+.linkedin-links {
+  font-size: 25px;
+
+  margin: 5px 10px 5px 0;
 
   color: $azul;
 }
 
+.equipe-cada-membro-downloadcurriculo {
+  font-size: 25px;
+
+  color: $azul;
+}
+
+.fa-file-download {
+  color: $azul;
+  margin-right:  10px;
+  font-size: 25px;
+}
+
 .equipe-cada-membro-downloadcurriculo-mobile-div {
   border: 1px solid $azul;
-  padding: 10px 0;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
 
   a:link, a:visited, a:hover, a:active {
     text-decoration: none;
+  }
+
+  a {
+    font-size: 20px;
+
+    i {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
   }
 }
 
@@ -116,12 +152,6 @@
   color: $azul;
 
   width: 100%;
-}
-
-.fa-file-download {
-  color: $azul;
-  margin-right:  10px;
-  font-size: 30px;
 }
 
 
