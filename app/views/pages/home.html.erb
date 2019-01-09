@@ -91,7 +91,7 @@
       <% @areas_nomes.length.times do |area| %>
         <div class="col-xs-12-xs-6 col-lg-4">
           <%= link_to "/areas/" + @areas_links[area] do %>
-            <div class="card-solutions card-solutions-big" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
+            <div class="card-solutions card-solutions-home card-solutions-big" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
               <div class="card-solutions-description">
                 <h2><%= @areas_nomes[area] %></h2>
               </div>
