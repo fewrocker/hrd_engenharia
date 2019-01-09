@@ -1,16 +1,58 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+// Substitutes console.log(x) for l(x)
 function l(x) {
   return console.log(x)
+}
+
+// Fires given event on given element
+function eventFire(el, etype){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+
+// Scrolls to given Y position on given duration
+function doScrolling(elementY, duration) {
+  var startingY = window.pageYOffset;
+  var diff = elementY - startingY;
+  var start;
+
+  // Bootstrap our animation - it will get called right before next frame shall be rendered.
+  window.requestAnimationFrame(function step(timestamp) {
+    if (!start) start = timestamp;
+    // Elapsed milliseconds since start of scrolling.
+    var time = timestamp - start;
+    // Get percent of completion in range [0, 1].
+    var percent = Math.min(time / duration, 1);
+
+    window.scrollTo(0, startingY + diff * percent);
+
+    // Proceed with animation as long as we wanted it to.
+    if (time < duration) {
+      window.requestAnimationFrame(step);
+    }
+  })
 }
 
 swipeElement = document.querySelector('.wrapper-homepage-slideshow')
 carousel = document.getElementById('home-slider');
 carouselSlides = document.getElementsByClassName('carousel-home-item')
 carouselIndicators = document.getElementsByClassName('carousel-indicator')
+carouselRightArrow = document.getElementsByClassName('glyphicon-chevron-right')[0]
+carouselLeftArrow = document.getElementsByClassName('glyphicon-chevron-left')[0]
 
-l(carouselSlides)
+// Calcula o inicio do primeiro elemento de conteudo para scrollTo
+// Calcula o tamanho do primeiro wrapper
+pageStartY = document.querySelector('.wrapper-page').getBoundingClientRect().top;
+// Subtrai o tamanho da navbar pois esta em posicao fixed
+pageStartY -= document.querySelector('.navbar-hrd').offsetHeight;
 
+l(pageStartY)
 
 // This function  detects swipe movements, and runs function swipeFunction with inputs swiped element
 // and swipe direction (u, r, l, d) for up, right, left, down
@@ -58,6 +100,7 @@ function detectswipe(el,func) {
 
 // Obs: carousel element must be the one with class .carousel
 // This function will cycle slides left and right with user swipe left and right
+// If scroll is down, go to page content smoothly
 function swipeFunction(element,direction) {
   carousel = document.getElementById('home-slider');
 
@@ -70,27 +113,21 @@ function swipeFunction(element,direction) {
     slideCount += 1
   });
 
-  // Get which slide will become active
-
   if (direction === 'l') {
-    if (activeSlide === carouselSlides.length - 1) {
-      nextSlide = 0
-    } else {
-      nextSlide = activeSlide + 1
-    }
-  } else {
-    if (activeSlide === 0) {
-      nextSlide = carouselSlides.length - 1
-    } else {
-      nextSlide = activeSlide - 1
-    }
+    l('l')
+    eventFire(carouselRightArrow, 'click');
+  } else if (direction === 'r') {
+    l('r')
+    eventFire(carouselLeftArrow, 'click')
+  } else if (direction === 'u') {
+    doScrolling(pageStartY, 600)
   }
 
-  carouselSlides[activeSlide].classList.remove('active')
-  carouselSlides[nextSlide].classList.add('active')
+  // carouselSlides[activeSlide].classList.remove('active')
+  // carouselSlides[nextSlide].classList.add('active')
 
-  carouselIndicators[activeSlide].classList.remove('active')
-  carouselIndicators[nextSlide].classList.add('active')
+  // carouselIndicators[activeSlide].classList.remove('active')
+  // carouselIndicators[nextSlide].classList.add('active')
 }
 
 detectswipe('home-slider',swipeFunction);
