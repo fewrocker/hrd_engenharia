@@ -144,6 +144,20 @@
   border-top: 6px solid white;
 }
 
+// Mobile carousel indicators
+@media screen and (max-width: 400px) {
+  .carousel-indicators li {
+    width: 30px;
+    height: 6px;
+  }
+  .carousel-indicators li.active {
+    width: 30px;
+    height: 6px;
+
+    border-top: 6px solid white;
+  }
+}
+
 
 
 
