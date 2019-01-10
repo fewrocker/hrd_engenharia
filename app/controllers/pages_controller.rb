@@ -137,9 +137,9 @@ class PagesController < ApplicationController
       @areas_fotos_url << "https://images.theconversation.com/files/171209/original/file-20170526-6421-1j3azw3.jpg?ixlib=rb-1.1.0&rect=0\%2C360\%2C6016\%2C2917&q=45&auto=format&w=1356&h=668&fit=crop"
 
       # Nome da area a ser incluida
-      @areas_nomes << 'Inspecoes e Ensaios'
+      @areas_nomes << 'Inspeções e Ensaios'
       # Endereco da pagina a ser redirecionada pelo card
-      @areas_links << 'inespecoes-e-ensaios'
+      @areas_links << 'inspecoes-e-ensaios'
       # Foto de fundo do card
       @areas_fotos_url << "http://olouro.com.br/cdg/wp-content/uploads/2016/09/INSP.jpg"
 
@@ -158,13 +158,6 @@ class PagesController < ApplicationController
       @areas_fotos_url << "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg/2000px-Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg.png"
 
       # Nome da area a ser incluida
-      @areas_nomes << 'Treinamentos'
-      # Endereco da pagina a ser redirecionada pelo card
-      @areas_links << 'treinamentos'
-      # Foto de fundo do card
-      @areas_fotos_url << "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg/2000px-Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg.png"
-
-      # Nome da area a ser incluida
       @areas_nomes << 'Siderúrgica'
       # Endereco da pagina a ser redirecionada pelo card
       @areas_links << 'siderurgia'
@@ -177,13 +170,6 @@ class PagesController < ApplicationController
       @areas_links << 'agronegocio'
       # Foto de fundo do card
       @areas_fotos_url << "http://portallubes.com.br/wp-content/uploads/2018/10/m\%C3\%A1quinas-agr\%C3\%ADcolas-01.jpg"
-
-      # Nome da area a ser incluida
-      @areas_nomes << 'Industria alimenticia'
-      # Endereco da pagina a ser redirecionada pelo card
-      @areas_links << 'industria-alimenticia'
-      # Foto de fundo do card
-      @areas_fotos_url << "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg/2000px-Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg.png"
 
       # Nome da area a ser incluida
       @areas_nomes << 'Construção civil'

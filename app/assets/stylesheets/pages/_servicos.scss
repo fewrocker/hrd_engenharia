@@ -1,0 +1,20 @@
+.cada-servico {
+  padding: 2px 30px;
+
+  background: $azul-claro;
+
+  margin-bottom: 3px;
+
+  &:hover {
+    background: $azul;
+    color: white;
+  }
+
+  ul>li {
+    font-size: 16px;
+  }
+}
+
+.servico-title {
+  font-size: 16px;
+}

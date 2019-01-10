@@ -32,7 +32,7 @@ logoHeight = navbarLogo.offsetHeight
 
 transitionYMax = 400
 
-sizeFactor = 0.5
+sizeFactor = 0.6
 
 window.addEventListener('scroll', function() {
   if (window.pageYOffset >=0 && window.pageYOffset <= transitionYMax) {
