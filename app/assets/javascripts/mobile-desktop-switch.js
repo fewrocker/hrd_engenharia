@@ -22,7 +22,6 @@ if (deviceWidth > 400) {
 // On resize
 window.addEventListener ('resize', function(){
   deviceWidth = window.innerWidth;
-  l(deviceWidth)
 
   if (deviceWidth < 400) {
     desktopPage.style.display = 'none'

@@ -109,9 +109,9 @@ class PagesController < ApplicationController
       # para a nova area
 
       # Nome da area a ser incluida
-      @areas_nomes << 'Mineiração'
+      @areas_nomes << 'Mineração'
       # Endereco da pagina a ser redirecionada pelo card
-      @areas_links << 'mineiracao'
+      @areas_links << 'mineracao'
       # Foto de fundo do card
       @areas_fotos_url << "https://correiodaamazonia.com/wp-content/uploads/2014/06/minera\%C3\%A7\%C3\%A3o.jpg"
 

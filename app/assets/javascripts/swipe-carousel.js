@@ -52,8 +52,6 @@ pageStartY = document.querySelector('.wrapper-page').getBoundingClientRect().top
 // Subtrai o tamanho da navbar pois esta em posicao fixed
 pageStartY -= document.querySelector('.navbar-hrd').offsetHeight;
 
-l(pageStartY)
-
 // This class  detects swipe movements, and runs function swipeFunction with inputs swiped element
 // and swipe direction (u, r, l, d) for up, right, left, down
 // To run a function on given swipe direction, use:
