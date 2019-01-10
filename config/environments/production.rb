@@ -2,18 +2,9 @@ Rails.application.configure do
 
   # config.action_mailer.delivery_method     = :postmark
   # config.action_mailer.postmark_settings   = { api_key: ENV['POSTMARK_API_KEY'] }
-  config.action_mailer.default_url_options = { host: "hrd-engenharia.herokuapp.com" }
-  config.action_mailer.delivery_method = :smtp
+  # config.action_mailer.default_url_options = { host: "hrd-engenharia.herokuapp.com" }
+  # config.action_mailer.delivery_method = :smtp
 
-  ActionMailer::Base.smtp_settings = {
-    :user_name => ENV['SENDGRID_USERNAME'],
-    :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'heroku.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
 
 
   # Verifies that versions and hashed value of the package contents in the project's package.json

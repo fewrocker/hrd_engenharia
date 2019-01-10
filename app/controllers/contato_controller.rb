@@ -11,14 +11,7 @@ class ContatoController < ApplicationController
 
     c.save
 
-    c.request = request
-    if c.deliver
-      flash.now[:error] = nil
-    else
-      flash.now[:error] = 'Cannot send message.'
-    end
-
-    # ContatoMailer.contato(c).deliver_now
+    ContatoMailer.contato(c).deliver_now
 
     redirect_to "/contato?email=sent"
   end
