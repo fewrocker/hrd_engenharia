@@ -28,14 +28,42 @@
       color: white;
     }
   }
-
 }
 
-.copyright-text {
-  margin-top: 4vh;
+// Font sizes
+.footer-container h2 {
+  font-size: 16px
 }
 
-//Mobile changes
+.copyright-text p {
+  font-size: 14px;
+}
+
+.footer-page-links>li {
+  font-size: 14px;
+}
+
+// Font sizes mobile
+@media (max-width: 400px) {
+  .footer-container h2 {
+    font-size: 14px
+  }
+
+  .copyright-text p {
+    font-size: 12px;
+  }
+
+  .footer-page-links>li {
+    font-size: 12px;
+  }
+}
+
+.footer-container h2 {
+  margin-bottom: 2vh;
+  color: rgba(250,250,250,0.7);
+}
+
+//Mobile adaptations
 @media (max-width: 768px) {
   .hide-on-mobile {
     display: none !important;
@@ -43,13 +71,10 @@
 
   .copyright-text p {
     margin-bottom: 20px;
-    font-size: 16px;
   }
 
   .footer-container {
     margin: 0 10vw;
     padding: 10px 0;
   }
-
-  .footer-container h2 {font-size: 30px;}
 }
