@@ -11,8 +11,8 @@ class ContatoController < ApplicationController
 
     c.save
 
-    @contact.request = request
-    if @contact.deliver
+    c.request = request
+    if c.deliver
       flash.now[:error] = nil
     else
       flash.now[:error] = 'Cannot send message.'
