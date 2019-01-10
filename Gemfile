@@ -17,6 +17,7 @@ gem 'uglifier'
 gem 'webpacker'
 
 gem 'postmark-rails'
+gem 'mail-form'
 
 gem "letter_opener", group: :development
 
