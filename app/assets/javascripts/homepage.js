@@ -10,13 +10,12 @@ bannerThirdLine = document.getElementsByClassName("main-title-text-line")[2]
 
 bannerEndY = document.getElementsByClassName("wrapper-page")[0].offsetTop;
 
-navbarComponent = document.getElementsByClassName("navbar-home")[0]
-
-l(navbarComponent)
-
 body = document.getElementsByTagName("body")[0]
 
 //Navbar scroll solid-tranparent
+navbarComponent = document.getElementsByClassName("navbar-home")[0]
+l(navbarComponent)
+
 window.addEventListener('scroll', function() {
   if (window.pageYOffset > bannerEndY - 300) {
     navbarComponent.classList.add("solid-navbar")

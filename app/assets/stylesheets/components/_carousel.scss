@@ -44,32 +44,32 @@
 }
 
 .carousel-caption {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .carousel-slide-title {
-  font-size: 80px;
+  font-size: 30px;
   text-transform: uppercase;
   font-weight: bold;
 
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .carousel-slide-description {
-  font-size: 30px;
+  font-size: 22px;
 
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .carousel-slide-button {
-  padding: 20px 50px;
+  padding: 20px 30px;
 
   color: white;
 
   border: 2px solid white;
   border-radius: 30px;
 
-  font-size: 30px;
+  font-size: 18px;
 
   &:hover {
     background-color: white;
@@ -77,9 +77,35 @@
 }
 
 // Adaptacoes para mobile
+@media screen and (min-width: 1600px) {
+  .carousel-caption {
+    margin-bottom: 80px;
+  }
+  .carousel-slide-title {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  .carousel-slide-description {
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+  .carousel-slide-button {
+    padding: 20px 35px;
+
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 30px;
+
+    font-size: 30px;
+  }
+}
+
+// Adaptacoes para mobile
 @media screen and (max-width: 768px) {
   .carousel-caption {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
   .carousel-slide-title {
     font-size: 30px;

@@ -2,7 +2,7 @@
 .navbar-hrd {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   background: white;
-  height: 130px;
+  height: 80px;
   padding: 10px 30px 0px 30px;
   display: flex;
   align-items: center;
@@ -22,6 +22,15 @@
   z-index: 99;
 }
 
+.navbar-home {
+  background: transparent;
+}
+
+.solid-navbar {
+  background: $azul-logo;
+  transition: 400ms ease;
+}
+
 /* Right section */
 .navbar-wagon-right {
   display: flex;
@@ -29,17 +38,13 @@
   justify-content: space-between;
 }
 
-/* Basic navbar item */
-.navbar-wagon-item {
-  cursor: pointer;
-  padding: 0 20px;
-}
-
 /* Navbar link */
 .navbar-wagon-link {
+  cursor: pointer;
+
   color: white;
   font-size: 20px;
-  padding: 40px 20px;
+  padding: 15px 15px;
   margin: 0 5px;
   text-transform: uppercase;
 
@@ -49,13 +54,17 @@
     color: $azul;
     transition: 0.3s ease;
   }
+
+  i {
+    font-size: 30px;
+  }
 }
 
 .navbar-logo {
-  height: 100px;
+  height: 60px;
 
   position: absolute;
-  bottom: 15px;
+  bottom: 10px;
 }
 
 /* Dropdown menu */
@@ -103,5 +112,24 @@
   .navbar-hrd {
     height: 80px;
   }
+}
 
+@media screen and (max-width: 1200px) {
+  .navbar-wagon-link {
+    font-size: 17px;
+    padding: 15px 5px;
+    margin: 0 4px;
+
+    i {
+      font-size: 25px;
+    }
+  }
+
+  .navbar-hrd {
+    height: 70px
+  }
+
+  .navbar-logo {
+    height: 50px;
+  }
 }
