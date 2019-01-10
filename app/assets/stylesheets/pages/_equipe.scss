@@ -81,10 +81,12 @@
 }
 
 .equipe-cada-membro-descricao {
-  @media screen and (min-width: 768px) {font-size: 20px;}
+  @media screen and (min-width: 768px) {font-size: 18px;}
   @media screen and (max-width: 768px) {font-size: 15px;}
 
   text-align: justify;
+
+  margin-bottom: 60px;
 }
 
 .equipe-cada-membro-links {

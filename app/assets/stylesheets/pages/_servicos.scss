@@ -1,7 +1,7 @@
 .cada-servico {
   padding: 2px 30px;
 
-  background: $azul-claro;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $azul-claro 100%);
 
   margin-bottom: 3px;
 
@@ -18,3 +18,64 @@
 .servico-title {
   font-size: 16px;
 }
+
+.servicos-links {
+  margin: 7vh auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+
+  padding: 0 10px;
+
+  .row {
+    width: 100%;
+  }
+}
+
+.servicos-cada-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: white;
+  background: $azul;
+  font-size: 18px;
+
+  padding: 20px 0;
+  width: 100%;
+
+  margin-bottom: 10px;
+
+  &:hover {
+    color: white;
+    background-color: $azul-logo;
+    transition: 150ms ease;
+  }
+}
+
+.servicos-link-voltar {
+  color: rgba(150,150,150,1);
+  border: 1px solid rgba(100,100,100,1);
+  background: white;
+
+  &:hover {
+    background: rgba(150,150,150,1);
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .servicos-links {
+    margin: 4vh auto;
+  }
+  .servicos-cada-link {
+    font-size: 14px;
+  }
+}
+

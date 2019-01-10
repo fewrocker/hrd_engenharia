@@ -21,13 +21,7 @@
       <li class="cada-equipamento">Prédios e galpões industriais.</li>
     </ul>
 
-    <div class="link-to-servicos-outisde-div">
-      <%= link_to '/servicos', target: :_blank, class: 'link-to-servicos' do %>
-        <div class="link-to-servicos-div">
-          Conheça nossos serviços
-        </div>
-      <% end %>
-    </div>
+    <%= render 'shared/servicos-links' %>
 
   </div>
 </div>
