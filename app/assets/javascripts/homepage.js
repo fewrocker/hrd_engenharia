@@ -12,17 +12,6 @@ bannerEndY = document.getElementsByClassName("wrapper-page")[0].offsetTop;
 
 body = document.getElementsByTagName("body")[0]
 
-//Navbar scroll solid-tranparent
-navbarComponent = document.getElementsByClassName("navbar-home")[0]
-
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset > bannerEndY - 300) {
-    navbarComponent.classList.add("solid-navbar")
-  } else {
-    navbarComponent.classList.remove("solid-navbar")
-  }
-});
-
 //Navbar reduce size on scroll
 navbarComponent = document.getElementsByClassName("navbar-home")[0]
 navbarLogo = document.getElementsByClassName("navbar-logo")[0]
@@ -45,6 +34,17 @@ window.addEventListener('scroll', function() {
   if (window.pageYOffset > transitionYMax) {
     navbarComponent.style.height = Math.floor(navbarHeight * sizeFactor) + 'px'
     navbarLogo.style.height = Math.floor(logoHeight * sizeFactor) + 'px'
+  }
+});
+
+//Navbar scroll solid-tranparent
+navbarComponent = document.getElementsByClassName("navbar-home")[0]
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 400) {
+    navbarComponent.classList.add("solid-navbar")
+  } else {
+    navbarComponent.classList.remove("solid-navbar")
   }
 });
 
