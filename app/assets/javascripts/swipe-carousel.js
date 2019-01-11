@@ -16,33 +16,6 @@ function eventFire(el, etype){
   }
 }
 
-// Scrolls to given Y position on given duration
-function doScrolling(elementY, duration) {
-  var startingY = window.pageYOffset;
-  var diff = elementY - startingY;
-  var start;
-
-  // Bootstrap our animation - it will get called right before next frame shall be rendered.
-  window.requestAnimationFrame(function step(timestamp) {
-    if (!start) start = timestamp;
-    // Elapsed milliseconds since start of scrolling.
-    var time = timestamp - start;
-    // Get percent of completion in range [0, 1].
-    var percent = Math.min(time / duration, 1);
-
-    window.scrollTo(0, startingY + diff * percent);
-
-    // Proceed with animation as long as we wanted it to.
-    if (time < duration) {
-      window.requestAnimationFrame(step);
-    }
-  })
-}
-
-swipeElement = document.querySelector('.wrapper-homepage-slideshow')
-carousel = document.getElementById('home-slider');
-carouselSlides = document.getElementsByClassName('carousel-home-item')
-carouselIndicators = document.getElementsByClassName('carousel-indicator')
 carouselRightArrow = document.getElementsByClassName('glyphicon-chevron-right')[0]
 carouselLeftArrow = document.getElementsByClassName('glyphicon-chevron-left')[0]
 

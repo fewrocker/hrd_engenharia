@@ -95,6 +95,17 @@ class PagesController < ApplicationController
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-9594333a/'
       # ----------------------------------------------------
+
+      # ----------------------------------------------------
+      # Nome do membro (do jeito que ira aparecer)
+      @membros_nomes << 'Renêe Ferreira de Andrade'
+      # Nome da foto do membro dentro da pasta app/assets/images
+      @membros_fotos << 'equipe-renee.png'
+      # Descricao sobre o membro (do jeito que ira aparecer)
+      @membros_descricao << 'Engenheiro Mecânico formado pela UFMG com vasta experiência em análises estruturais pelo método dos elementos finitos e dimensionamento de componentes mecânicos. Especialista em análise de equipamentos, principalmente na área de mineração, como máquinas de pátio, transportadores de correia, lavadores e secadores. Atua em auditoria de projetos, análises estruturais estáticas e dinâmicas, fadiga de materiais e inspeções estruturais.'
+      # Link do linkedin do membro
+      @membros_linkedin << 'https://www.linkedin.com/in/renêe-ferreira-de-andrade-0069ab104/'
+      # ----------------------------------------------------
     end
 
       # -----------------------------------------------------
@@ -155,7 +166,7 @@ class PagesController < ApplicationController
       # Endereco da pagina a ser redirecionada pelo card
       @areas_links << 'seguradoras-e-reguladoras'
       # Foto de fundo do card
-      @areas_fotos_url << "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg/2000px-Flag_of_Afghanistan_\%281880\%E2\%80\%931901\%29.svg.png"
+      @areas_fotos_url << "/assets/areas/seguradoras-e-reguladoras.png"
 
       # Nome da area a ser incluida
       @areas_nomes << 'Siderúrgica'
