@@ -1,22 +1,83 @@
-<div class="wrapper-page">
-  <div class="container-page">
-    <h1 class="page-title">Ferrovias</h1>
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>Nossas áreas</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/areas/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
 
-    <p class="page-content">
-      Com destaque crescente no cenário nacional, o setor ferroviário vem se mostrando uma alternativa viável para solução dos problemas de transporte brasileiro, incluindo o transporte urbano (setor metroviário). A HRD oferece soluções de engenharia para o setor incluindo consultoria estrutural, projeto de sistemas preditivos e inspeção.
-    </p>
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">Ferrovias</h1>
 
-    <h1 class="page-subtitle">Equipamentos</h1>
+          <p class="page-content">
+            Atualmente em destaque no cenário nacional, o setor ferroviário vem se mostrando uma alternativa viável para solução dos problemas de transporte brasileiro, incluindo para o transporte urbano (metroviário). A HRD oferece soluções inovadoras de engenharia para o setor incluindo consultoria estrutural, projeto de sistemas preditivos e inspeção.
+          </p>
 
-    <ul class="lista-equipamentos">
-      <li class="cada-equipamento">Vagões;</li>
-      <li class="cada-equipamento">Virador de Vagões;</li>
-      <li class="cada-equipamento">Empurrador de Vagões;</li>
-      <li class="cada-equipamento">Via permanente;</li>
-      <li class="cada-equipamento">Rotundas Ferroviárias;</li>
-    </ul>
+          <h1 class="page-subtitle">Equipamentos</h1>
 
-    <%= render 'shared/servicos-links' %>
+          <ul class="lista-equipamentos">
+            <li class="cada-equipamento">Vagões;</li>
+            <li class="cada-equipamento">Virador de Vagões;</li>
+            <li class="cada-equipamento">Empurrador de Vagões;</li>
+            <li class="cada-equipamento">Via permanente;</li>
+            <li class="cada-equipamento">Rotundas Ferroviárias;</li>
+          </ul>
+          <%= render 'shared/servicos-links' %>
 
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Nossas áreas
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/areas/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <h1 class="page-title">Ferrovias</h1>
+
+      <p class="page-content">
+        Atualmente em destaque no cenário nacional, o setor ferroviário vem se mostrando uma alternativa viável para solução dos problemas de transporte brasileiro, incluindo para o transporte urbano (metroviário). A HRD oferece soluções inovadoras de engenharia para o setor incluindo consultoria estrutural, projeto de sistemas preditivos e inspeção.
+      </p>
+
+      <h1 class="page-subtitle">Equipamentos</h1>
+
+      <ul class="lista-equipamentos">
+        <li class="cada-equipamento">Vagões;</li>
+        <li class="cada-equipamento">Virador de Vagões;</li>
+        <li class="cada-equipamento">Empurrador de Vagões;</li>
+        <li class="cada-equipamento">Via permanente;</li>
+        <li class="cada-equipamento">Rotundas Ferroviárias;</li>
+      </ul>
+
+      <%= render 'shared/servicos-links' %>
+
+    </div>
   </div>
 </div>

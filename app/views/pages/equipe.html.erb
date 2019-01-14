@@ -1,5 +1,5 @@
 <div class="page-desktop">
-  <div class="wrapper-page wrapper-minheight">
+  <div class="wrapper-page" style="<%= @page_background %>">
     <div class="container-page">
 
       <h1 class="page-title">Nossa equipe</h1>
@@ -22,6 +22,9 @@
             <h2 class="equipe-cada-membro-nome">
               <%= @membros_nomes[membro] %>
             </h2>
+            <h3 class="equipe-cada-membro-cargo">
+              <%= @membros_cargos[membro] %>
+            </h3>
             <p class="equipe-cada-membro-descricao">
               <%= @membros_descricao[membro] %>
             </p>
@@ -29,7 +32,7 @@
               <%= link_to @membros_linkedin[membro], target: "_blank", class: 'linkedin-links', target: :_blank do  %>
                 <h2 class="linkedin-links"><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
               <% end %>
-              <%= link_to "download/#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo', target: :_blank do  %>
+              <%= link_to "download/curriculo-#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo', target: :_blank do  %>
                 <i class="fa fa-file-download"></i>Currículo
               <% end %>
             </div>
@@ -44,7 +47,7 @@
 </div>
 
 <div class="page-mobile">
-  <div class="wrapper-page wrapper-minheight">
+  <div class="wrapper-page" style="<%= @page_background %>">
     <div class="container-page">
 
       <h1 class="page-title">Nossa equipe</h1>
@@ -68,6 +71,9 @@
               <h2 class="equipe-cada-membro-nome">
                 <%= @membros_nomes[membro] %>
               </h2>
+              <h3 class="equipe-cada-membro-cargo">
+                <%= @membros_cargos[membro] %>
+              </h3>
               <p class="equipe-cada-membro-descricao">
                 <%= @membros_descricao[membro] %>
               </p>

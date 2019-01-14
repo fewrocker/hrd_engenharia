@@ -1,11 +1,3 @@
-.lista-equipamentos {
-
-}
-
-.cada-equipamento {
-
-}
-
 .link-to-servicos-outisde-div {
   display: flex;
   align-items: center;
@@ -42,5 +34,68 @@
 @media screen and (max-width: 400px) {
   .link-to-servicos-div {
     width: 80%;
+  }
+}
+
+
+
+// -----------------------------------------------------
+.wrapper-page-areas {
+  padding: 100px 130px 40px 130px !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper-page-areas {
+    padding: 100px 50px 40px 50px !important;
+  }
+}
+
+.container-areas-listing {
+  margin-top: 10px;
+
+  background: rgba(255,255,255,0.5);
+  border: 1px solid rgba(100,100,100,0.8);
+  box-shadow: 1px 1px rgba(50,50,50,1);
+
+  padding: 30px 20px;
+
+
+  a:active, a:link, a:hover, a:visited {
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgba(100,100,100,1);
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+}
+
+.areas-listing-cada-area {
+  padding: 5px 0 5px 5px;
+
+  p {
+    color: rgba(100,100,100,1);
+
+    &:hover {
+      color: $azul;
+    }
+  }
+
+  .active {
+    color: $azul;
+    font-weight: bold;
+  }
+}
+
+.areas-dropdown-mobile-item {
+  p {
+    color: rgba(150,150,150,1);
+  }
+
+  .active {
+    color: $azul;
   }
 }

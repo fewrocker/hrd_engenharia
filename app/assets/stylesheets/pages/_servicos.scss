@@ -79,3 +79,20 @@
   }
 }
 
+.lista-equipamentos {
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 10px;
+
+    &:hover {
+      background: $azul;
+      color: white;
+      cursor: pointer;
+    }
+
+
+  }
+}
+
+

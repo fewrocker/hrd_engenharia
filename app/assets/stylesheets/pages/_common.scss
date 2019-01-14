@@ -8,6 +8,8 @@ h1,h2,h3,h4,h5 {
   background-color: white;
 
   min-height: 100vh;
+
+  background-size: cover !important;
 }
 
 .container-page {
@@ -88,7 +90,7 @@ h1,h2,h3,h4,h5 {
   color: rgba(80,80,80,1);
   text-transform: uppercase;
   margin-bottom: 4vh;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: $roboto;
   font-weight: 700;
 }
@@ -96,7 +98,7 @@ h1,h2,h3,h4,h5 {
 .page-subtitle {
   color: rgba(80,80,80,1);
   margin-bottom: 2vh;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-family: $roboto;
   font-weight: 600;
 }
@@ -104,7 +106,7 @@ h1,h2,h3,h4,h5 {
 .page-description {
   color: rgba(50,50,50,1);
   margin-bottom: 1vh;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: $roboto;
   text-align:  justify;
 }
@@ -112,7 +114,7 @@ h1,h2,h3,h4,h5 {
 .page-content {
   color: rgba(50,50,50,1);
   margin-bottom: 2vh;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: $roboto;
   text-align:  justify;
   text-indent: 1.5em;
@@ -121,7 +123,7 @@ h1,h2,h3,h4,h5 {
 .valores-lista li {
   color: rgba(50,50,50,1);
   margin-bottom: 2vh;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: $roboto;
   text-align:  justify;
   text-indent: 0.5em;
@@ -132,14 +134,14 @@ h1,h2,h3,h4,h5 {
 @media screen and (max-width: 768px) {
   .page-title {
     margin-bottom: 3vh;
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: $roboto;
     font-weight: 700;
   }
 
   .page-subtitle {
     color: rgba(80,80,80,1);
-    margin-bottom: 1.5vh;
+    margin-bottom: 1.4vh;
     font-size: 1.5em;
     font-family: $roboto;
     font-weight: 600;
