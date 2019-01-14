@@ -44,7 +44,7 @@
 }
 
 .carousel-caption {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
 }
 
 .carousel-slide-title {
@@ -76,10 +76,10 @@
   }
 }
 
-// Adaptacoes para mobile
+// Adaptacoes para telas maiores
 @media screen and (min-width: 1600px) {
   .carousel-caption {
-    margin-bottom: 80px;
+    margin-bottom: 250px;
   }
   .carousel-slide-title {
     font-size: 60px;
@@ -105,7 +105,7 @@
 // Adaptacoes para mobile
 @media screen and (max-width: 768px) {
   .carousel-caption {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
   }
   .carousel-slide-title {
     font-size: 30px;

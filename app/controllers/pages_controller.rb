@@ -22,30 +22,30 @@ class PagesController < ApplicationController
 
       # Slide 1
       @slides_title << "A empresa"
-      @slides_description << "A HRD Engenharia atua lado a lado com seus parceiros para apresentar soluções técnicas de alto nível que mitigam riscos e agregam valor aos seus ativos"
+      # @slides_description << "A HRD Engenharia atua lado a lado com seus parceiros para apresentar soluções técnicas de alto nível que mitigam riscos e agregam valor aos seus ativos"
       @slides_button  << "Conheça a empresa"
-      @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
+      @slides_image  <<  "assets/carousel-1.jpg"
       @slides_link  <<  "/a-empresa"
 
       # Slide 2
       @slides_title << "Áreas de atuação"
-      @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
+      # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
       @slides_button  << "Conheça nossas áreas"
-      @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
+      @slides_image  <<  "assets/carousel-2.jpg"
       @slides_link  <<  "/areas"
 
       # Slide 3
       @slides_title << "Serviços"
-      @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
+      # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
       @slides_button  << "Conheça nossos serviços"
-      @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
+      @slides_image  <<  "assets/carousel-3.jpg"
       @slides_link  <<  "/servicos"
 
       # Slide 4
       @slides_title << "A equipe"
-      @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
+      # @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
       @slides_button  << "Conheça nossa equipe"
-      @slides_image  <<  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garzweiler_Tagebau-1230.jpg/1280px-Garzweiler_Tagebau-1230.jpg"
+      @slides_image  <<  "assets/carousel-4.jpg"
       @slides_link  <<  "/equipe"
 
     # -----------------------------------------------------

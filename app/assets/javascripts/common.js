@@ -4,9 +4,7 @@ function l(x) {
   return console.log(x)
 }
 
-wrapperSlidershow = document.getElementsByClassName('wrapper-homepage-slideshow')[0]
-screenHeight = window.innerHeight
-
-document.getElementsByClassName('wrapper-homepage-slideshow')[0].style.height = screenHeight = window.innerHeight + 'px'
+// Make home slideshow fit to screen in all devices
+document.getElementsByClassName('wrapper-homepage-slideshow')[0].style.height = window.innerHeight + 'px'
 
 });
