@@ -10,7 +10,8 @@
   padding: 20px;
   margin-bottom: 5px;
 
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, $azul-claro 100%);
+  background: rgba(255,255,255,0.5);
+  border: 0.5px solid rgba(200,200,200,1);
 
   position: relative;
 }
