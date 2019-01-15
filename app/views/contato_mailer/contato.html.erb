@@ -25,19 +25,19 @@
 
 </style>
 
-<p><span class="content-title">Email de contato</span></p>
-<p><span class="item-title">Contato preenchido em:</span> <span class="item-content"><%= @contato.created_at.strftime("%d/%m/%Y") %>, <%= @contato.created_at.strftime("%H:%M") %></span></p>
+<p><strong><span class="content-title">Email de contato</span></span></p>
+<p><span class="item-title"><strong>Contato preenchido em:</strong></span> <span class="item-content"><%= @contato.created_at.strftime("%d/%m/%Y") %>, <%= @contato.created_at.strftime("%H:%M") %></span></p>
 
 <br>
 
-<span class="content-title">Dados do contato:</span>
+<span class="content-title"><strong>Dados do contato:</strong></span>
 
-<p><span class="item-title">Nome:</span> <span class="item-content"><%= @contato.nome %></span></p>
-<p><span class="item-title">Email:</span> <span class="item-content"><%= @contato.email %></span> &nbsp;&nbsp; <span class="item-title">Telefone:</span> <span class="item-content"><%= @contato.telefone %></p>
+<p><span class="item-title"><strong>Nome:</strong></span> <span class="item-content"><%= @contato.nome %></span></p>
+<p><span class="item-title"><strong>Email:</strong></span> <span class="item-content"><%= @contato.email %></span> &nbsp;&nbsp; <span class="item-title">Telefone:</span> <span class="item-content"><%= @contato.telefone %></p>
 
 <br>
 
-<p><span class="contato-assunto"><%= @contato.assunto %></span></p>
+<p><span class="contato-assunto"><strong><%= @contato.assunto %></strong></span></p>
 
 <p class="contato-mensagem">
   <%= @contato.mensagem %>
