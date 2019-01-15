@@ -1,4 +1,5 @@
 class ContatoController < ApplicationController
+  skip_before_action :verify_authenticity_token
 
   def create
     c = Contato.new
@@ -15,6 +16,4 @@ class ContatoController < ApplicationController
 
     redirect_to "/contato?email=sent"
   end
-
-
 end
