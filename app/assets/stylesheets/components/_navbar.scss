@@ -147,7 +147,7 @@
 }
 
 .dropdown-content-atuacao-item {
-  padding: 0 150px 0 30px;
+  padding: 0 50px 0 20px;
   margin: 0px !important;
 }
 
@@ -159,12 +159,20 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 999;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
 }
 
 /* Links inside the dropdown */
 .dropdown-content-atuacao a {
-  color: black;
-  padding: 12px 16px;
+  color: rgba(100,100,100,1);
+  padding: 4px 16px;
+  font-size: 15px;
   text-decoration: none;
   display: block;
 }
