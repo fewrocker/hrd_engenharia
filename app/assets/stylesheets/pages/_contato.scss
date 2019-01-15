@@ -14,7 +14,6 @@
   text-align: left;
 }
 
-
 .alert-email-sent {
   border: 3px solid rgba(30,130,60,1);
   background: rgba(80,250,120,1);
@@ -28,4 +27,18 @@
   p {
     margin: 0;
   }
+}
+
+.modal-trabalhe-conosco-title {
+  color: $azul;
+  text-weight: bold;
+}
+
+.modal-body-par {
+  color: rgba(100,100,100,1);
+}
+
+.trabalhe-conosco-link {
+  color: $azul;
+  font-size: 22px;
 }
