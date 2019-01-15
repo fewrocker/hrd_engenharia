@@ -11,6 +11,7 @@ Rails.application.configure do
     password:             ENV['GMAIL_PASS'],
     authentication:       'plain',
     enable_starttls_auto: true
+  }
 
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = false
