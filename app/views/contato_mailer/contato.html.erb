@@ -1,12 +1,5 @@
 <style>
-  h1 {
-    font-family: $roboto;
-    font-size: 25px;
-
-    font-weight: bold;
-  }
-
-  h2 {
+  .content-title {
     font-family: $roboto;
     font-size: 22px;
     font-weight: bold;
@@ -14,32 +7,43 @@
 
   .item-title {
     font-family: $roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   .item-content {
     font-family: $roboto;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: lighter !important;
+  }
+
+  .contato-assunto {
+    font-family: $roboto;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .contato-mensagem {
+    font-family: $roboto;
+    font-size: 16px;
   }
 
 </style>
 
-<h1><strong>Email de contato</strong></h1>
-<h3><span class="item-title">Contato preenchido em:</span> <span class="item-content"><%= @contato.created_at.strftime("%d/%m/%Y") %>, <%= @contato.created_at.strftime("%H:%M") %></span></h3>
+<span class="content-title">Email de contato</span>
+<span class="item-title">Contato preenchido em:</span> <span class="item-content"><%= @contato.created_at.strftime("%d/%m/%Y") %>, <%= @contato.created_at.strftime("%H:%M") %></span></h3>
 
 <br>
 
-<h2><strong>Dados do contato:</strong></h1>
+<span class="content-title">Dados do contato:</span>
 
-<h3><span class="item-title">Nome:</span> <span class="item-content"><%= @contato.nome %></span></h1>
-<h3><span class="item-title">Email:</span> <span class="item-content"><%= @contato.email %></span> &nbsp;&nbsp; <span class="item-title">Telefone:</span> <span class="item-content"><%= @contato.telefone %></h3>
+<span class="item-title">Nome:</span> <span class="item-content"><%= @contato.nome %></span>
+<span class="item-title">Email:</span> <span class="item-content"><%= @contato.email %></span> &nbsp;&nbsp; <span class="item-title">Telefone:</span> <span class="item-content"><%= @contato.telefone %>
 
 <br>
 
-<h2><%= @contato.assunto %></h1>
+<span class="contato-assunto"><%= @contato.assunto %></span>
 
-<p>
+<p class="contato-mensagem">
   <%= @contato.mensagem %>
 </p>
