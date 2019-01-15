@@ -3,6 +3,15 @@ Rails.application.configure do
   # Gmail configuration
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: "hrd-engenharia.herokuapp.com" }
+  ActionMailer::Base.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: 'hrd-engenharia.herokuapp.com',
+    user_name: ENV['GMAIL_ACC'],
+    password: ENV['GMAIL_PASS'],
+    authentication: :login,
+    enable_starttls_auto: true
+  }
 
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = false
