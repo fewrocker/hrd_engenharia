@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'mineracao'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-mineracao.jpg"
+    @areas_fotos_url << "assets/areas-miner.jpeg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Portos'
@@ -102,27 +102,8 @@ class ApplicationController < ActionController::Base
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'papel-e-celulose'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-papel-celulose.jpg"
+    @areas_fotos_url << "assets/areas-papel.jpeg"
   end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   # HELPERS

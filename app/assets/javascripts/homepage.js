@@ -4,6 +4,7 @@ function l(x) {
   return console.log(x)
 }
 
+l('porra')
 
 bannerEndY = document.getElementsByClassName("wrapper-page")[0].offsetTop;
 

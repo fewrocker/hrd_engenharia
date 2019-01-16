@@ -55,6 +55,7 @@
   font-weight: 200;
   color: white;
   text-shadow: 1px 1px rgba(255,255,255,1);
+  position: relative;
 
   margin-bottom: 30px;
 }
@@ -76,6 +77,8 @@
   font-size: 18px;
 
   font-weight: 200;
+
+  position: relative;
 
   &:hover {
     background-color: white;
