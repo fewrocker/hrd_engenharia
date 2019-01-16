@@ -105,6 +105,14 @@ h1,h2,h3,h4,h5 {
   font-weight: 300;
 }
 
+.page-subsubtitle {
+  color: rgba(80,80,80,1);
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+  font-family: $roboto;
+  font-weight: 400;
+}
+
 .page-description {
   color: rgba(50,50,50,1);
   margin-bottom: 1vh;
@@ -149,6 +157,14 @@ h1,h2,h3,h4,h5 {
     font-size: 1.5em;
     font-family: $roboto;
     font-weight: 300;
+  }
+
+  .page-subsubtitle {
+    color: rgba(80,80,80,1);
+    margin-bottom: 2vh;
+    font-size: 1em;
+    font-family: $roboto;
+    font-weight: 400;
   }
 
   .page-description {
