@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'postmark-rails'
 gem 'mail_form'
 
@@ -31,7 +33,8 @@ group :development, :test do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'dotenv-rails'
 end
 
 gem 'rails_12factor', group: :production
+gem 'mapbox-gl-rails'
+

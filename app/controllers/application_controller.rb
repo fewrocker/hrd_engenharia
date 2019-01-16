@@ -1,6 +1,17 @@
 class ApplicationController < ActionController::Base
   helper_method :content, :box
-  before_action :page_background, :areas_atuacao
+  before_action :page_background, :areas_atuacao, :markers
+
+
+
+
+  def markers
+    @markers = []
+    @markers << {
+      lat: -19.934212,
+      lng: -43.921944
+    }
+  end
 
 
   # Universal background image

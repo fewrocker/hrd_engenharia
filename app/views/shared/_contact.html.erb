@@ -27,9 +27,8 @@
 
 .contact-form-sendbtn {
   margin-top: 50px;
-  width: 200px;
+  width: 300px;
 }
-
 </style>
 
 <form action="/contato" method="post" class="mb-4 contact-form" id="contact-form" onsubmit="return validateForm()">
@@ -100,7 +99,12 @@
 
             <div class="text-center text-md-left">
               <input type="submit" class="btn btn-primary contact-form-sendbtn" value="Enviar">
+              <%= link_to "#", data: {toggle: "modal", target: "#modal-trabalhe-conosco"}, class:"trabalhe-conosco-btn-link" do %>
+                <div class="btn trabalhe-conosco-btn">Trabalhe conosco</div>
+              <% end %>
             </div>
+
+
 
 
         </div>

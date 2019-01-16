@@ -1,17 +1,26 @@
 .contact-info-header {
   color: $azul;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .contact-info-content {
   color: rgba(80,80,80,1);
-  font-size: 1em;
+  font-size: 0.9em;
 
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .contact-infos {
   text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-infos {
+    border-left: 1px solid rgba(200,200,200,1);
+
+    padding-left: 50px;
+  }
+
 }
 
 .alert-email-sent {
@@ -39,6 +48,20 @@
 }
 
 .trabalhe-conosco-link {
-  color: $azul;
+  color: rgba(120,120,120,1);
   font-size: 22px;
+  font-weight: lighter;
+}
+
+.trabalhe-conosco-btn {
+  margin-top: 10px;
+  width: 300px;
+  background: rgba(220,220,220,1);
+  color: black;
+}
+
+.trabalhe-conosco-btn-link {
+  a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+  }
 }

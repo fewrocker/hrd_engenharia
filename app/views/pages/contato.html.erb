@@ -10,34 +10,45 @@
     <h1 class="page-title">Contatos</h1>
 
     <div class="row">
-      <div class="col-md-7 col-xs-12">
+      <div class="col-md-6 col-xs-12">
         <%= render 'shared/contact' %>
       </div>
-      <div class="col-md-5 col-xs-12 contact-infos">
-        <h2 class="contact-info-header"><i class="fas fa-phone"></i> Telefone</h2>
-        <h2 class="contact-info-content">
-          (31) 99146-2556 - Diego Martins
-        </h2>
-        <h2 class="contact-info-content">
-          (31) 98269-5775 - Renêe Ferreira
-        </h2>
-
-
-        <h2 class="contact-info-header"><i class="far fa-envelope"></i> E-mail</h2>
-        <h2 class="contact-info-content">
-          contato@hrdengenharia.com.br
-        </h2>
-        <h2 class="contact-info-content">
-          comercial@hrdengenharia.com.br
-        </h2>
-
+      <div class="col-md-6 col-xs-12 contact-infos">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="contact-phone">
+              <h2 class="contact-info-header"><i class="fas fa-phone"></i> Telefone</h2>
+              <h2 class="contact-info-content">
+                (31) 99146-2556 - Diego Martins
+              </h2>
+              <h2 class="contact-info-content">
+                (31) 98269-5775 - Renêe Ferreira
+              </h2>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="contact-email">
+              <h2 class="contact-info-header"><i class="far fa-envelope"></i> E-mail</h2>
+              <h2 class="contact-info-content">
+                contato@hrdengenharia.com.br
+              </h2>
+              <h2 class="contact-info-content">
+                comercial@hrdengenharia.com.br
+              </h2>
+            </div>
+          </div>
+        </div>
         <h2 class="contact-info-header"><i class="fas fa-map-marker-alt"></i> Endereço</h2>
         <h2 class="contact-info-content">
           R. Monte Alegre, 49, loja 2 - Serra, Belo Horizonte, MG - 30240-230
         </h2>
-
-        <%= link_to 'Trabalhe conosco', "#", data: {toggle: "modal", target: "#modal-trabalhe-conosco"}, class:"trabalhe-conosco-link" %>
-
+        <div
+          id="map"
+          style="width: 100%;
+          height: 300px;"
+          data-markers="<%= @markers.to_json %>"
+          data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+        ></div>
       </div>
     </div>
   </div>

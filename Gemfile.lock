@@ -90,6 +90,8 @@ GEM
     mail_form (1.7.1)
       actionmailer (>= 3.2, < 6)
       activemodel (>= 3.2, < 6)
+    mapbox-gl-rails (0.52.0)
+      railties (>= 3.2, < 6.0)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (0.9.2)
@@ -215,6 +217,7 @@ DEPENDENCIES
   letter_opener
   listen (~> 3.0.5)
   mail_form
+  mapbox-gl-rails
   pg (~> 0.21)
   postmark-rails
   pry-byebug
