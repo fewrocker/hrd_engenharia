@@ -4,30 +4,35 @@ function l(x) {
   return console.log(x)
 }
 
-//Navbar reduce size on scroll
-slideTitles = document.getElementsByClassName("carousel-slide-title")
-slideButtons = document.getElementsByClassName("carousel-slide-button")
 
-translateMax = screen.width / 0.8
-translateYMax = document.getElementsByClassName("carousel")[0].offsetHeight
-translateGap = translateMax / translateYMax
-l(translateGap)
+//Animation: carousel captions slide on scroll
+//Only on desktop because it causes lag on mobile
+if (deviceWidth > 768) {
+  slideTitles = document.getElementsByClassName("carousel-slide-title")
+  slideButtons = document.getElementsByClassName("carousel-slide-button")
 
-window.addEventListener('scroll', function() {
-  if (window.pageYOffset >=0 && window.pageYOffset <= translateYMax) {
-    scrollY = window.pageYOffset
+  translateMax = screen.width / 0.8
+  translateYMax = document.getElementsByClassName("carousel")[0].offsetHeight
+  translateGap = translateMax / translateYMax
+  l(translateGap)
 
-    Array.prototype.forEach.call(slideTitles, function(el) {
-      el.style.right = scrollY * translateGap + 'px'
-    });
-    Array.prototype.forEach.call(slideButtons, function(el) {
-      el.style.left = scrollY * translateGap + 'px'
-    });
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset >=0 && window.pageYOffset <= translateYMax) {
+      scrollY = window.pageYOffset
 
-  }
+      Array.prototype.forEach.call(slideTitles, function(el) {
+        el.style.right = scrollY * translateGap + 'px'
+      });
+      Array.prototype.forEach.call(slideButtons, function(el) {
+        el.style.left = scrollY * translateGap + 'px'
+      });
+
+    }
+
+  });
+}
 
 
-});
 
 
 

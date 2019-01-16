@@ -33,8 +33,6 @@
   .navbar-logo {
     height: 8vh;
   }
-
-
 }
 .solid-navbar {
   background: $azul-logo;
@@ -109,11 +107,11 @@
 // Mobile adaptations
 @media screen and (max-width: 400px) {
   .navbar-logo {
-    height: 50px;
+    height: 40px;
   }
 
   .navbar-hrd {
-    height: 80px;
+    height: 60px;
   }
 }
 
