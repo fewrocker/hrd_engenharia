@@ -60,7 +60,7 @@ class ApplicationController < ActionController::Base
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'inspecoes-e-ensaios'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpg"
+    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpeg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Automobilística'
