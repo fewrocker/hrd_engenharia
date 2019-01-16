@@ -78,8 +78,10 @@
 
 .equipe-cada-membro-nome {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
+  color: rgba(70,70,70,1);
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .equipe-cada-membro-cargo {
@@ -97,6 +99,8 @@
   text-align: justify;
 
   margin-bottom: 60px;
+
+  @media screen and (max-width: 768px) {margin-bottom: 20px;}
 
   color: rgba(100,100,100,1);
 }
@@ -120,6 +124,8 @@
 .linkedin-links {
   font-size: 25px;
 
+  font-weight: 300;
+
   margin: 5px 10px 5px 0;
 
   color: $azul;
@@ -129,15 +135,56 @@
   font-size: 25px;
 
   color: $azul;
+
+  font-weight: 300;
+
+  font-family: $roboto;
+}
+
+.equipe-cada-membro-downloadcurriculo-mobile-div {
+  border: 1px solid $azul;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  background: $azul;
+
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+  }
+
+  a {
+    font-size: 20px;
+
+    i {
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+  margin-bottom: 5px;
+}
+
+.equipe-cada-membro-downloadcurriculo-mobile {
+  color: white;
+
+  font-weight: lighter;
+
+  width: 100%;
 }
 
 .fa-file-download {
-  color: $azul;
+  color: branco;
   margin-right:  10px;
   font-size: 25px;
 }
 
-.equipe-cada-membro-downloadcurriculo-mobile-div {
+.equipe-cada-membro-linkedin-mobile-div {
   border: 1px solid $azul;
   height: 50px;
 
@@ -162,10 +209,13 @@
   }
 }
 
-.equipe-cada-membro-downloadcurriculo-mobile {
+.equipe-cada-membro-linkedin-mobile {
   color: $azul;
 
   width: 100%;
+
+  h2 {font-weight: 300;}
 }
+
 
 

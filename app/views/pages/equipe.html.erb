@@ -22,9 +22,6 @@
             <h2 class="equipe-cada-membro-nome">
               <%= @membros_nomes[membro] %>
             </h2>
-            <h3 class="equipe-cada-membro-cargo">
-              <%= @membros_cargos[membro] %>
-            </h3>
             <p class="equipe-cada-membro-descricao">
               <%= @membros_descricao[membro] %>
             </p>
@@ -71,20 +68,17 @@
               <h2 class="equipe-cada-membro-nome">
                 <%= @membros_nomes[membro] %>
               </h2>
-              <h3 class="equipe-cada-membro-cargo">
-                <%= @membros_cargos[membro] %>
-              </h3>
               <p class="equipe-cada-membro-descricao">
                 <%= @membros_descricao[membro] %>
               </p>
               <div class="equipe-cada-membro-downloadcurriculo-mobile-div text-center">
-                <%= link_to @membros_linkedin[membro], target: "_blank", class: 'equipe-cada-membro-downloadcurriculo-mobile', target: :_blank do  %>
-                  <h2><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
-                <% end %>
-              </div>
-              <div class="equipe-cada-membro-downloadcurriculo-mobile-div text-center">
                 <%= link_to "download/curriculo-#{@membros_nomes[membro].split[0].downcase}.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo-mobile', target: :_blank do  %>
                   <i class="fa fa-file-download"></i>Currículo
+                <% end %>
+              </div>
+              <div class="equipe-cada-membro-linkedin-mobile-div text-center">
+                <%= link_to @membros_linkedin[membro], target: "_blank", class: 'equipe-cada-membro-linkedin-mobile', target: :_blank do  %>
+                  <h2><i class="fab fa-linkedin"></i>&nbsp;&nbsp;LinkedIn</h2>
                 <% end %>
               </div>
             </div>

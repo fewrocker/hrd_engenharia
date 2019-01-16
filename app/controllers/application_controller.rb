@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
   def contact_map_markers
     @markers = []
     @markers << {
-      lat: -19.934212,
-      lng: -43.921944
+      lat: -19.936470,
+      lng: -43.924847
     }
   end
 
@@ -32,77 +32,77 @@ class ApplicationController < ActionController::Base
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'mineracao'
     # Foto de fundo do card
-    @areas_fotos_url << "https://correiodaamazonia.com/wp-content/uploads/2014/06/minera\%C3\%A7\%C3\%A3o.jpg"
+    @areas_fotos_url << "assets/areas-mineracao.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Portos'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'portos'
     # Foto de fundo do card
-    @areas_fotos_url << "https://conect.online/wp-content/uploads/2018/02/163665-post-de-3000-redator-entregar-ate-2301-15h-norma-regulamentadora-para-descarga-em-portos-brasileiros.jpg"
+    @areas_fotos_url << "assets/areas-portos.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Ferrovias'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'ferrovias'
     # Foto de fundo do card
-    @areas_fotos_url << "https://www.zug.net.br/wp-content/uploads/2018/07/img_ferrovia.jpg"
+    @areas_fotos_url << "assets/areas-ferrovia.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Pontes'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'pontes'
     # Foto de fundo do card
-    @areas_fotos_url << "https://images.theconversation.com/files/171209/original/file-20170526-6421-1j3azw3.jpg?ixlib=rb-1.1.0&rect=0\%2C360\%2C6016\%2C2917&q=45&auto=format&w=1356&h=668&fit=crop"
+    @areas_fotos_url << "assets/areas-pontes.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Inspeções e Ensaios'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'inspecoes-e-ensaios'
     # Foto de fundo do card
-    @areas_fotos_url << "http://olouro.com.br/cdg/wp-content/uploads/2016/09/INSP.jpg"
+    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Automobilística'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'automobilistica'
     # Foto de fundo do card
-    @areas_fotos_url << "http://blog.arcelormittal.com.br/wp-content/uploads/2017/01/a\%C3\%A7os_especiais_1.jpg"
+    @areas_fotos_url << "assets/areas-automobilistica.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Seguradoras e reguladoras'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'seguradoras-e-reguladoras'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/seguradoras-e-reguladoras.png"
+    @areas_fotos_url << "assets/areas-seguradoras-e-reguladoras.png"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Siderúrgica'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'siderurgia'
     # Foto de fundo do card
-    @areas_fotos_url << "http://www.combustol.com.br/uploads/image/siderurgica02.jpg"
+    @areas_fotos_url << "assets/areas-siderurgia.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Agronegócio'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'agronegocio'
     # Foto de fundo do card
-    @areas_fotos_url << "http://portallubes.com.br/wp-content/uploads/2018/10/m\%C3\%A1quinas-agr\%C3\%ADcolas-01.jpg"
+    @areas_fotos_url << "assets/areas-agronegocio.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Construção civil'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'construcao-civil'
     # Foto de fundo do card
-    @areas_fotos_url << "https://i1.wp.com/brasilconstrucao.com.br/wp-content/uploads/2014/07/Constru\%C3\%A7\%C3\%A3o.jpg?fit=4288\%2C2848&ssl=1"
+    @areas_fotos_url << "assets/areas-construcao-civil.jpg"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Papel e celulose'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'papel-e-celulose'
     # Foto de fundo do card
-    @areas_fotos_url << "http://2.bp.blogspot.com/-piDO8B4lrrc/UaYtOFVr3oI/AAAAAAAAHM8/iQ_ty2Q3vbw/s1600/SU.JPG"
+    @areas_fotos_url << "assets/areas-papel-celulose.jpg"
   end
 
 

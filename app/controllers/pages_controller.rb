@@ -83,13 +83,13 @@ class PagesController < ApplicationController
 
       # ----------------------------------------------------
       # Nome do membro (do jeito que ira aparecer)
-      @membros_nomes << 'Hugo Gatti'
+      @membros_nomes << 'Hugo Gatti Ladeia Costa'
       # Cargo do membro (do jeito que ira aparecer)
       @membros_cargos << 'Diretor técnico'
       # Nome da foto do membro dentro da pasta app/assets/images
       @membros_fotos << 'equipe-hugo.png'
       # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Engenheiro mecânico com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
+      @membros_descricao << 'Engenheiro mecânico formado pela UFMG com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-9594333a/'
       # ----------------------------------------------------
@@ -115,7 +115,7 @@ class PagesController < ApplicationController
       # Nome da foto do membro dentro da pasta app/assets/images
       @membros_fotos << 'equipe-ronaldo.png'
       # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Graduado em engenharia mecânica pela Universidade Federal de Minas Gerais (UFMG, 2017), também estudou um ano na Johns Hopkins University e participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. Atuou com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
+      @membros_descricao << 'Formado em engenharia mecânica pela Universidade Federal de Minas Gerais , com graduação sanduíche pela Johns Hopkins University. Participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. Atuação com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
       # Link do linkedin do membro
       @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
       # ----------------------------------------------------
