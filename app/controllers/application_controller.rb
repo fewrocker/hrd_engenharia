@@ -1,11 +1,8 @@
 class ApplicationController < ActionController::Base
   helper_method :content, :box
-  before_action :page_background, :areas_atuacao, :markers
+  before_action :page_background, :areas_atuacao, :contact_map_markers
 
-
-
-
-  def markers
+  def contact_map_markers
     @markers = []
     @markers << {
       lat: -19.934212,
@@ -13,10 +10,9 @@ class ApplicationController < ActionController::Base
     }
   end
 
-
   # Universal background image
   def page_background
-    @page_background = "background-image: linear-gradient(-225deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 50%), url('/assets/background.png');"
+    # @page_background = "background-image: linear-gradient(-225deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 50%), url('/assets/background.png');"
   end
 
   def areas_atuacao

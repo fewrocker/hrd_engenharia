@@ -5,6 +5,35 @@ function l(x) {
   return console.log(x)
 }
 
+
+// Fade in first slide
+captions = document.getElementsByClassName('carousel-caption')
+captions[0].style.opacity = '0'
+
+// Makes specific element fade in on given conditions
+function fadein(el) {
+  opc_min = 0
+  opc_max = 1
+  time = 1000
+  timetick = 10
+  gap = (opc_max - opc_min)/(time / timetick)
+  opc_now = 0
+  animation_complete = false
+
+  var animation_progress = setInterval(function(){
+    opc_now += gap
+    el.style.opacity = opc_now.toString()
+    l(el.style.opacity)
+    if (opc_now > 1) {
+      clearInterval(animation_progress);
+      Array.prototype.forEach.call(captions, function(caption) {
+        caption.classList.add('carousel-caption-opc')
+      });
+    }
+  }, timetick);
+
+}
+
 // Fires given event on given element
 function eventFire(el, etype){
   if (el.fireEvent) {
@@ -108,6 +137,17 @@ class Swipe {
 (new Swipe('#home-slider')).onLeft(function() { eventFire(carouselRightArrow, 'click'); }).run();
 (new Swipe('#home-slider')).onRight(function() { eventFire(carouselLeftArrow, 'click'); }).run();
 
+// First element fade in
+setTimeout(function(){
+  fadein(captions[0])
+
+}, 200);
+
+
 
 });
+
+
+
+
 

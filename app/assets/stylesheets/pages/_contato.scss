@@ -6,21 +6,13 @@
 .contact-info-content {
   color: rgba(80,80,80,1);
   font-size: 0.9em;
+  font-weight: 300;
 
   margin-bottom: 10px;
 }
 
 .contact-infos {
   text-align: left;
-}
-
-@media screen and (min-width: 1200px) {
-  .contact-infos {
-    border-left: 1px solid rgba(200,200,200,1);
-
-    padding-left: 50px;
-  }
-
 }
 
 .alert-email-sent {
@@ -45,6 +37,9 @@
 
 .modal-body-par {
   color: rgba(100,100,100,1);
+  text-align: justify;
+  padding: 10px 20px;
+  font-weight: lighter;
 }
 
 .trabalhe-conosco-link {

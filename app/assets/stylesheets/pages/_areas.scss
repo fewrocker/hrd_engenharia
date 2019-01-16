@@ -37,8 +37,6 @@
   }
 }
 
-
-
 // -----------------------------------------------------
 .wrapper-page-areas {
   padding: 140px 130px 40px 130px !important;
@@ -78,6 +76,8 @@
 
   p {
     color: rgba(100,100,100,1);
+    font-family: $roboto;
+    font-weight: 300;
 
     &:hover {
       color: $azul;
