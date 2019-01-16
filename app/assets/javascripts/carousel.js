@@ -23,7 +23,6 @@ function fadein(el) {
   var animation_progress = setInterval(function(){
     opc_now += gap
     el.style.opacity = opc_now.toString()
-    l(el.style.opacity)
     if (opc_now > 1) {
       clearInterval(animation_progress);
       Array.prototype.forEach.call(captions, function(caption) {
