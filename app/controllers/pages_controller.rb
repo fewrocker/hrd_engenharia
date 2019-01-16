@@ -74,7 +74,7 @@ class PagesController < ApplicationController
       # Cargo do membro (do jeito que ira aparecer)
       @membros_cargos << 'Diretor técnico e comercial'
       # Nome da foto do membro dentro da pasta app/assets/images
-      @membros_fotos << 'equipe-diego.png'
+      @membros_fotos << 'equipe-diego.jpeg'
       # Descricao sobre o membro (do jeito que ira aparecer)
       @membros_descricao << 'Formado em Engenharia Mecânica pela UFMG, com ênfase em Engenharia Automobilística. Especializado em Integridade Estrutural pelo IEC-PUC Minas, possui ampla experiência na área de análises estruturais teórico-experimentais. Atua em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, dimensionamento mecânico, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
       # Link do linkedin do membro
