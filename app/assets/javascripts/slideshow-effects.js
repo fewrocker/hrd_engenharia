@@ -14,7 +14,6 @@ if (deviceWidth > 768) {
   translateMax = screen.width / 0.8
   translateYMax = document.getElementsByClassName("carousel")[0].offsetHeight
   translateGap = translateMax / translateYMax
-  l(translateGap)
 
   window.addEventListener('scroll', function() {
     if (window.pageYOffset >=0 && window.pageYOffset <= translateYMax) {
