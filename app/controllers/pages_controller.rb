@@ -91,7 +91,7 @@ class PagesController < ApplicationController
       # Descricao sobre o membro (do jeito que ira aparecer)
       @membros_descricao << 'Engenheiro mecânico formado pela UFMG com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
       # Link do linkedin do membro
-      @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-9594333a/'
+      @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-ladeia-costa-9594333a/'
       # ----------------------------------------------------
 
       # ----------------------------------------------------
