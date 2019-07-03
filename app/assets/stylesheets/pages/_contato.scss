@@ -9,6 +9,11 @@
   font-weight: 300;
 
   margin-bottom: 10px;
+
+  i {
+    color: $azul;
+    font-size: 1.4em;
+  }
 }
 
 .contact-infos {
@@ -49,7 +54,7 @@
 }
 
 .trabalhe-conosco-btn {
-  margin-top: 10px;
+  margin-top: 50px;
   width: 300px;
   background: rgba(220,220,220,1);
   color: black;

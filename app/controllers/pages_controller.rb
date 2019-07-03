@@ -55,73 +55,71 @@ class PagesController < ApplicationController
     # Equipe
     # -----------------------------------------------------
 
-    if params[:page] == 'equipe'
+      if params[:page] == 'equipe'
 
-      # Listagem de membros
-      @membros_nomes = []
-      @membros_fotos = []
-      @membros_descricao = []
-      @membros_linkedin = []
-      @membros_cargos = []
+        # Listagem de membros
+        @membros_nomes = []
+        @membros_fotos = []
+        @membros_descricao = []
+        @membros_linkedin = []
+        @membros_cargos = []
 
-      # Para adicionar novos membros, basta copiar e colar as linhas abaixo e mudar as informacoes
-      # para o novo membro
-      # Obs: obedecer ordem alfabetica
+        # Para adicionar novos membros, basta copiar e colar as linhas abaixo e mudar as informacoes
+        # para o novo membro
+        # Obs: obedecer ordem alfabetica
 
-      # ----------------------------------------------------
-      # Nome do membro (do jeito que ira aparecer)
-      @membros_nomes << 'Diego Correia Martins'
-      # Cargo do membro (do jeito que ira aparecer)
-      @membros_cargos << 'Diretor técnico e comercial'
-      # Nome da foto do membro dentro da pasta app/assets/images
-      @membros_fotos << 'equipe-diego.jpeg'
-      # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Formado em Engenharia Mecânica pela UFMG, com ênfase em Engenharia Automobilística. Especializado em Integridade Estrutural pelo IEC-PUC Minas, possui ampla experiência na área de análises estruturais teórico-experimentais. Atua em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, dimensionamento mecânico, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
-      # Link do linkedin do membro
-      @membros_linkedin << 'https://www.linkedin.com/in/diego-correia-martins-679743178/'
-      # ----------------------------------------------------
+        # ----------------------------------------------------
+        # Nome do membro (do jeito que ira aparecer)
+        @membros_nomes << 'Diego Correia Martins'
+        # Cargo do membro (do jeito que ira aparecer)
+        @membros_cargos << 'Diretor técnico e comercial'
+        # Nome da foto do membro dentro da pasta app/assets/images
+        @membros_fotos << 'equipe-diego.jpeg'
+        # Descricao sobre o membro (do jeito que ira aparecer)
+        @membros_descricao << 'Formado em Engenharia Mecânica pela UFMG, com ênfase em Engenharia Automobilística. Especializado em Integridade Estrutural pelo IEC-PUC Minas, possui ampla experiência na área de análises estruturais teórico-experimentais. Atua em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, dimensionamento mecânico, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
+        # Link do linkedin do membro
+        @membros_linkedin << 'https://www.linkedin.com/in/diego-correia-martins-679743178/'
+        # ----------------------------------------------------
 
-      # ----------------------------------------------------
-      # Nome do membro (do jeito que ira aparecer)
-      @membros_nomes << 'Hugo Gatti Ladeia Costa'
-      # Cargo do membro (do jeito que ira aparecer)
-      @membros_cargos << 'Diretor técnico'
-      # Nome da foto do membro dentro da pasta app/assets/images
-      @membros_fotos << 'equipe-hugo.png'
-      # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Engenheiro mecânico formado pela UFMG com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
-      # Link do linkedin do membro
-      @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-ladeia-costa-9594333a/'
-      # ----------------------------------------------------
+        # ----------------------------------------------------
+        # Nome do membro (do jeito que ira aparecer)
+        @membros_nomes << 'Hugo Gatti Ladeia Costa'
+        # Cargo do membro (do jeito que ira aparecer)
+        @membros_cargos << 'Diretor técnico'
+        # Nome da foto do membro dentro da pasta app/assets/images
+        @membros_fotos << 'equipe-hugo.png'
+        # Descricao sobre o membro (do jeito que ira aparecer)
+        @membros_descricao << 'Engenheiro mecânico formado pela UFMG com experiência em soluções de problemas de engenharia utilizando métodos dos elementos finitos. Especialista em cálculo de estruturas reticuladas, análises dinâmicas e não-lineares de equipamentos e seus componentes.'
+        # Link do linkedin do membro
+        @membros_linkedin << 'https://www.linkedin.com/in/hugo-gatti-ladeia-costa-9594333a/'
+        # ----------------------------------------------------
 
-      # ----------------------------------------------------
-      # Nome do membro (do jeito que ira aparecer)
-      @membros_nomes << 'Renêe Ferreira de Andrade'
-      # Cargo do membro (do jeito que ira aparecer)
-      @membros_cargos << 'Diretor técnico e comercial'
-      # Nome da foto do membro dentro da pasta app/assets/images
-      @membros_fotos << 'equipe-renee.png'
-      # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Engenheiro Mecânico formado pela UFMG com vasta experiência em análises estruturais pelo método dos elementos finitos e dimensionamento de componentes mecânicos. Especialista em análise de equipamentos, principalmente na área de mineração, como máquinas de pátio, transportadores de correia, lavadores e secadores. Atua em auditoria de projetos, análises estruturais estáticas e dinâmicas, fadiga de materiais e inspeções estruturais.'
-      # Link do linkedin do membro
-      @membros_linkedin << 'https://www.linkedin.com/in/renêe-ferreira-de-andrade-0069ab104/'
-      # ----------------------------------------------------
+        # ----------------------------------------------------
+        # Nome do membro (do jeito que ira aparecer)
+        @membros_nomes << 'Renêe Ferreira de Andrade'
+        # Cargo do membro (do jeito que ira aparecer)
+        @membros_cargos << 'Diretor técnico e comercial'
+        # Nome da foto do membro dentro da pasta app/assets/images
+        @membros_fotos << 'equipe-renee.png'
+        # Descricao sobre o membro (do jeito que ira aparecer)
+        @membros_descricao << 'Engenheiro Mecânico formado pela UFMG com vasta experiência em análises estruturais pelo método dos elementos finitos e dimensionamento de componentes mecânicos. Especialista em análise de equipamentos, principalmente na área de mineração, como máquinas de pátio, transportadores de correia, lavadores e secadores. Atua em auditoria de projetos, análises estruturais estáticas e dinâmicas, fadiga de materiais e inspeções estruturais.'
+        # Link do linkedin do membro
+        @membros_linkedin << 'https://www.linkedin.com/in/renêe-ferreira-de-andrade-0069ab104/'
+        # ----------------------------------------------------
 
-      # ----------------------------------------------------
-      # Nome do membro (do jeito que ira aparecer)
-      @membros_nomes << 'Ronaldo Lelis Santos'
-      # Cargo do membro (do jeito que ira aparecer)
-      @membros_cargos << 'Diretor técnico'
-      # Nome da foto do membro dentro da pasta app/assets/images
-      @membros_fotos << 'equipe-ronaldo.png'
-      # Descricao sobre o membro (do jeito que ira aparecer)
-      @membros_descricao << 'Formado em engenharia mecânica pela Universidade Federal de Minas Gerais , com graduação sanduíche pela Johns Hopkins University. Participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. Atuação com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
-      # Link do linkedin do membro
-      @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
-      # ----------------------------------------------------
-    end
-
-
+        # ----------------------------------------------------
+        # Nome do membro (do jeito que ira aparecer)
+        @membros_nomes << 'Ronaldo Lelis Santos'
+        # Cargo do membro (do jeito que ira aparecer)
+        @membros_cargos << 'Diretor técnico'
+        # Nome da foto do membro dentro da pasta app/assets/images
+        @membros_fotos << 'equipe-ronaldo.png'
+        # Descricao sobre o membro (do jeito que ira aparecer)
+        @membros_descricao << 'Formado em engenharia mecânica pela Universidade Federal de Minas Gerais , com graduação sanduíche pela Johns Hopkins University. Participou do programa de extensão em pesquisa de verão da Columbia University durante seu período de graduação. Atuação com proficiência em auditoria de projeto, cálculos estruturais estáticos e dinâmicos, análises de falhas e análise experimental de tensões e vibração, com foco no setor industrial.'
+        # Link do linkedin do membro
+        @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
+        # ----------------------------------------------------
+      end
     end
 
     # Renderiza paginas do tipo /(nome_da_pagina)
@@ -154,5 +152,4 @@ class PagesController < ApplicationController
 
     return conds.include?(true)
   end
-
 end
