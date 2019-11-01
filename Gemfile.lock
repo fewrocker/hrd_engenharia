@@ -102,7 +102,7 @@ GEM
     msgpack (1.2.4)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.9.1)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     pg (0.21.0)
     postmark (1.14.0)
