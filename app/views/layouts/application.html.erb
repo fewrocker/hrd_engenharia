@@ -1,3 +1,5 @@
+<% return yield if @content_only %>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,16 +22,15 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <script src="https://unpkg.com/scrollreveal"></script>
-      <%= stylesheet_pack_tag 'application', media: 'all' %>
-    <script>
-
-    </script>
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
 
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer' %>
+    <%= render 'shared/casemodal' %>
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <%= javascript_include_tag 'application' %>

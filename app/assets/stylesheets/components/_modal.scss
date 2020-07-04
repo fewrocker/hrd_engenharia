@@ -1,0 +1,27 @@
+#modal-case {
+  .modal-dialog {
+    width: 80vw;
+    margin: 20px auto;
+  }
+
+  @media (max-width: 800px) {
+    .modal-dialog {
+      width: 96vw;
+    }
+  }
+
+  .modal-header {
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      font-size: 40px;
+    }
+  }
+
+  .modal-body {
+    padding: 20px 30px 80px 30px;
+  }
+}

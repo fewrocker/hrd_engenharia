@@ -9,11 +9,8 @@ Rails.application.routes.draw do
   # Routing for download files from folder files
   match 'download/:filename', to: 'files#download', as: 'download', via: :get
 
-  Rails.application.routes.draw do
-    get "/:page" => "pages#show"
-  end
+  get "/:page", to: "pages#show"
+  get "/modals/:name", to: "modals#show"
 
-  Rails.application.routes.draw do
-    get "/areas/:area" => "pages#areas"
-  end
+  get "/areas/:area", to: "pages#areas"
 end
