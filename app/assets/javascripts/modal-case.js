@@ -6,7 +6,7 @@ const caseLinks = document.querySelectorAll(".case-link")
 const caseModalHeader = caseModal.querySelector("#case-modal-title")
 
 const getModal = async (name) => {
-  const response = await axios.get(`/modals/${name}`)
+  const response = await axios.get(`/cases/${name}`)
   caseModalBody.innerHTML = response.data;
 }
 

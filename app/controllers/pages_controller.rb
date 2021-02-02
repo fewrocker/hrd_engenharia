@@ -43,19 +43,17 @@ class PagesController < ApplicationController
       @slides_link  <<  "/servicos"
 
       # Slide 4
-      @slides_title << "A equipe"
+      @slides_title << "Cases"
       # @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
-      @slides_button  << "Conheça nossa equipe"
+      @slides_button  << "Veja nossos cases"
       @slides_image  <<  "assets/carousel-4.jpg"
-      @slides_link  <<  "/equipe"
-
-
+      @slides_link  <<  "/cases"
 
     # -----------------------------------------------------
     # Equipe
     # -----------------------------------------------------
 
-      if params[:page] == 'equipe'
+      if params[:page] == 'a-empresa'
 
         # Listagem de membros
         @membros_nomes = []

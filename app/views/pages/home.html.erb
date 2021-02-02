@@ -64,12 +64,40 @@
           <%= link_to "Conheça a empresa", '/a-empresa', class: "conheca-mais-btn btn" %>
         </div>
         <div class="col-xs-12 col-md-6">
-          <%= link_to "Conheça nossa equipe", '/equipe', class: "conheca-mais-btn btn" %>
+          <%= link_to "Veja nossos cases", '/cases', class: "conheca-mais-btn btn" %>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Section: Areas de atuacao -->
+  <div>
+    <%= image_tag "clientes.png", class: 'clientes-image' %>
+  </div>
+
+  <div class="metrics">
+    <div class="metric">
+      <div class="metric-name"><p>Horas de engenharia executadas</p></div>
+      <p class="metric-value">36000</p>
+    </div>
+    <div class="metric">
+      <p class="metric-name">Máquinas de pátio analisadas</p>
+      <p class="metric-value">250</p>
+    </div>
+    <div class="metric">
+      <p class="metric-name">TRs analisados</p>
+      <p class="metric-value">20</p>
+    </div>
+    <div class="metric">
+      <p class="metric-name">Ferramentas desenvolvidas</p>
+      <p class="metric-value">30</p>
+    </div>
+    <div class="metric">
+      <p class="metric-name">Número de clientes satisfeitos</p>
+      <p class="metric-value">800</p>
+    </div>
+  </div>
+
+  <% if false %>
     <h1 class="page-subtitle">
       ÁREAS DE ATUAÇÃO
     </h1>
@@ -78,27 +106,18 @@
       Com foco em consultoria e auditoria de projetos e manutenção de equipamentos e estruturas metálicas para o setor industrial, fornecemos soluções com custos acessíveis que possibilitam o aumento de lucratividade dos nossos parceiros. Entre os ramos de atuação, destacam-se: Mineração, Portos, Ferrovias e Siderurgia.
     </p>
 
-    <br>
-    <div class="row">
-      <% @areas_nomes.length.times do |area| %>
-        <div class="col-xs-12 col-lg-4">
-          <%= link_to "/areas/" + @areas_links[area] do %>
-            <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
-              <div class="card-solutions-description">
-                <h2><%= @areas_nomes[area] %></h2>
-              </div>
+    <% @areas_nomes.length.times do |area| %>
+      <div class="col-xs-12 col-lg-4">
+        <%= link_to "/areas/" + @areas_links[area] do %>
+          <div class="card-solutions card-solutions-home" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
+            <div class="card-solutions-description">
+              <h2><%= @areas_nomes[area] %></h2>
             </div>
-          <% end %>
-        </div>
-      <% end %>
-    </div>
-  </div>
-
-<!--   <canvas id="nokey" >
-  </canvas>
-
-  <div class="canvas-filter" >
-  </div> -->
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
 </div>
 
 
