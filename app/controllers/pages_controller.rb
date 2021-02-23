@@ -29,25 +29,25 @@ class PagesController < ApplicationController
       @slides_link  <<  "/a-empresa"
 
       # Slide 2
-      @slides_title << "Áreas de atuação"
+      @slides_title << "Serviços"
       # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
-      @slides_button  << "Conheça nossas áreas"
+      @slides_button  << "Conheça nossos serviços"
       @slides_image  <<  "assets/carousel-2.jpg"
       @slides_link  <<  "/areas"
 
       # Slide 3
-      @slides_title << "Serviços"
+      @slides_title << "Cases"
       # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
-      @slides_button  << "Conheça nossos serviços"
+      @slides_button  << "Veja nossos cases"
       @slides_image  <<  "assets/carousel-3.jpg"
       @slides_link  <<  "/servicos"
 
       # Slide 4
-      @slides_title << "Cases"
+      @slides_title << "Contato"
       # @slides_description << "A HRD Engenharia conta com uma equipe onde todos possuem uma formação de alto nível e vasta experiência com projetos nas áreas de atuação"
-      @slides_button  << "Veja nossos cases"
+      @slides_button  << "Solicite um orçamento"
       @slides_image  <<  "assets/carousel-4.jpg"
-      @slides_link  <<  "/cases"
+      @slides_link  <<  "/contato"
 
     # -----------------------------------------------------
     # Equipe
@@ -68,7 +68,7 @@ class PagesController < ApplicationController
 
         # ----------------------------------------------------
         # Nome do membro (do jeito que ira aparecer)
-        @membros_nomes << 'Diego Correia Martins'
+        @membros_nomes << 'aaaa Diego Correia Martins'
         # Cargo do membro (do jeito que ira aparecer)
         @membros_cargos << 'Diretor técnico e comercial'
         # Nome da foto do membro dentro da pasta app/assets/images

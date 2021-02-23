@@ -1,103 +1,25 @@
 <div class="wrapper-page" style="<%= @page_background %>">
   <div class="container-page">
-    <h1 class="page-title">
-      Serviços
-    </h1>
+    <h1 class="page-title">Serviços</h1>
 
-    <div class="cada-servico">
-      <div class="servico-header">
-        <h2 class="servico-title">
-          Elaboração de modelos CAD 3D;
-        </h2>
-        <i class="fas fa-caret-down"></i>
-      </div>
+    <p class="page-content">
+      Selecione uma dos serviços abaixo para obter mais informações:
+    </p>
 
-      <div class="servico-content hide">
-        <p>oi@</p>
-        <p>oi@</p>
-        <p>oi@</p>
-        <p>oi@</p>
-        <p>oi@</p>
-      </div>
-    </div>
+    <br>
 
-    <div class="cada-servico">
-      <div class="servico-header">
-        <h2 class="servico-title">
-          Análises via método dos elementos finitos
-        </h2>
-        <i class="fas fa-caret-down"></i>
-      </div>
-
-      <div class="servico-content hide">
-        <ul>
-          <li>Análise estrutural estática linear e não-linear;</li>
-          <li>Análise estrutural dinâmica: modal, resposta frequência, vibração forçada explícita e implícita;</li>
-          <li>Análise termo estrutural;</li>
-          <li>Análise de fadiga e vida remanescente;</li>
-          <li>Análise de mecânica da fratura;</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Análise fluidodinâmica computacional (CFD);
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Análise modal teórica e experimental;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Análise experimental de tensões (extensometria) e de vibrações;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Inspeção e avaliação de integridade estrutural;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Perícia e investigação de acidentes;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Planos de montagem e desmontagem;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Procedimentos e acompanhamento de instalação de reforços e reformas;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Verificação e dimensionamento de estruturas e componentes mecânicos;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Análise estrutural e mecânica para repotenciamento de equipamentos;
-      </h2>
-    </div>
-
-    <div class="cada-servico">
-      <h2 class="servico-title">
-        Execução de treinamentos em análise de equipamentos e estruturas.
-      </h2>
+    <div class="row" style="width: 100%; margin-left: auto; margin-right: auto;">
+      <% @areas_nomes.length.times do |area| %>
+        <div class="col-xs-12 col-lg-6">
+          <%= link_to "/areas/" + @areas_links[area] do %>
+            <div class="card-solutions card-solutions-big" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @areas_fotos_url[area] %>);">
+              <div class="card-solutions-description">
+                <h2><%= @areas_nomes[area] %></h2>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
     </div>
 
   </div>
