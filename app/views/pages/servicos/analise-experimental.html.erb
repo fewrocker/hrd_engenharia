@@ -4,11 +4,11 @@
       <div class="col-xs-3">
         <div class="container-page">
           <div class="container-areas-listing">
-            <h3>Áreas de atuação</h3>
+            <h3>serviços</h3>
             <% @areas_nomes.length.times do |area| %>
-              <%= link_to "/areas/" + @areas_links[area] do %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
                 <div class="areas-listing-cada-area">
-                  <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
                 </div>
               <% end %>
             <% end %>
@@ -37,7 +37,14 @@
             <li class="cada-equipamento">Avaliação de atendimento de critérios de SSO de equipamentos vibratórios;</li>
             <li class="cada-equipamento">Identificação de modos naturais;</li>
             <li class="cada-equipamento">Determinação de esforços atuantes em estruturas e componentes.</li>
-          </ul>
+          </ul><br>
+
+          <p class="page-content">
+            Para garantir um atendimento com excelência, agilidade e precisão, a HRD conta com domínio técnico e 
+            expertise para instalação, montagem e utilização dos programas e equipamentos de aquisição de dados. Nossa
+             equipe também possui profissionais com ampla experiência no tratamento e análise de dados colhidos de 
+             extensometria e acelerometria, assegurando assertividade e confiabilidade nas análises experimentais.
+          </p>
 
           <%= render 'shared/servicos-links' %>
 
@@ -52,14 +59,14 @@
     <div class="container-page">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Áreas de atuação
+          Serviços
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
           <% @areas_nomes.length.times do |area| %>
             <li class="areas-dropdown-mobile-item">
-              <%= link_to "/areas/" + @areas_links[area] do %>
-                <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
               <% end %>
             </li>
           <% end %>

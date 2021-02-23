@@ -1,0 +1,133 @@
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>Serviços</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">ANÁLISE FLUIDODINÂMICA COMPUTACIONAL (CFD)</h1>
+
+          <p class="page-content">
+            O escoamento de fluidos está presente em todos os ambientes de nossas vidas e seu entendimento tem 
+            diversas aplicações potenciais, do estudo de sistemas de refrigeração e tubulações a turbinas de vento
+             à previsão do tempo e estudo de astros. No entanto, como seu comportamento é regido por complexas 
+             equações diferenciais, muitas vezes sem solução analítica, o desenvolvimento de modelos computacionais
+              para estudo da dinâmica de fluidos (CFD) possibilita soluções cada vez mais precisas destes tipos de 
+              problema.
+            </p>
+
+            <p class="page-content">
+            Estas análises permitem a determinação de parâmetros fundamentais no estudo do escoamento de fluidos, como:
+            </p>
+
+          <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Vazão mássica do fluido;</li>
+            <li class="cada-equipamento">Distribuição de pressões aero ou fluidodinâmicas;</li>
+            <li class="cada-equipamento">Determinação do perfil de velocidades;</li>
+            <li class="cada-equipamento">Acoplamento com soluções térmicas e estruturais.</li>
+            </ul><br>
+
+            <p class="page-content">
+            As aplicações mais comuns na indústria para simulações de CFD são:
+            </p>
+
+            <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Determinação de forças aerodinâmicas atuantes em estruturas;</li>
+            <li class="cada-equipamento">Otimização de sistemas de refrigeração e troca de calor;</li>
+            <li class="cada-equipamento">Otimização geométrica aplicada a aerodinâmica;</li>
+            <li class="cada-equipamento">Dimensionamento de sistemas hidráulicos;</li>
+            <li class="cada-equipamento">Otimização de processos químicos;</li>
+            <li class="cada-equipamento">Avaliação de desgaste em superfícies.</li>
+            </ul><br>
+
+            <p class="page-content">
+            Com os resultados da análise CFD é possível maximizar a eficiência de diversos processos e projetos
+             em qualquer ponto de sua vida, seja na etapa conceitual (minimização do custo de prototipagem) ou 
+             após anos de operação (avaliação de mudanças para otimização e aumento de eficiência).
+            </p>
+
+          <%= render 'shared/servicos-links' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Serviços
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+          <h1 class="page-title">ANÁLISE FLUIDODINÂMICA COMPUTACIONAL (CFD)</h1>
+
+          <p class="page-content">
+            O escoamento de fluidos está presente em todos os ambientes de nossas vidas e seu entendimento tem 
+            diversas aplicações potenciais, do estudo de sistemas de refrigeração e tubulações a turbinas de vento
+             à previsão do tempo e estudo de astros. No entanto, como seu comportamento é regido por complexas 
+             equações diferenciais, muitas vezes sem solução analítica, o desenvolvimento de modelos computacionais
+              para estudo da dinâmica de fluidos (CFD) possibilita soluções cada vez mais precisas destes tipos de 
+              problema.
+            </p>
+
+            <p class="page-content">
+            Estas análises permitem a determinação de parâmetros fundamentais no estudo do escoamento de fluidos, como:
+            </p>
+
+          <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Vazão mássica do fluido;</li>
+            <li class="cada-equipamento">Distribuição de pressões aero ou fluidodinâmicas;</li>
+            <li class="cada-equipamento">Determinação do perfil de velocidades;</li>
+            <li class="cada-equipamento">Acoplamento com soluções térmicas e estruturais.</li>
+            </ul><br>
+
+            <p class="page-content">
+            As aplicações mais comuns na indústria para simulações de CFD são:
+            </p>
+
+            <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Determinação de forças aerodinâmicas atuantes em estruturas;</li>
+            <li class="cada-equipamento">Otimização de sistemas de refrigeração e troca de calor;</li>
+            <li class="cada-equipamento">Otimização geométrica aplicada a aerodinâmica;</li>
+            <li class="cada-equipamento">Dimensionamento de sistemas hidráulicos;</li>
+            <li class="cada-equipamento">Otimização de processos químicos;</li>
+            <li class="cada-equipamento">Avaliação de desgaste em superfícies.</li>
+            </ul><br>
+
+            <p class="page-content">
+            Com os resultados da análise CFD é possível maximizar a eficiência de diversos processos e projetos
+             em qualquer ponto de sua vida, seja na etapa conceitual (minimização do custo de prototipagem) ou 
+             após anos de operação (avaliação de mudanças para otimização e aumento de eficiência).
+            </p>
+      <%= render 'shared/servicos-links' %>
+
+    </div>
+  </div>
+</div>

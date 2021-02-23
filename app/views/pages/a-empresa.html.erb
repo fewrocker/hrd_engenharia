@@ -46,11 +46,12 @@
   <div class="wrapper-page" style="<%= @page_background %>">
     <div class="container-page">
 
-      <h1 class="page-title">Nossa equipe</h1>
+      <h1 class="page-title">Responsáveis Técnicos</h1>
 
       <% (@membros_nomes.length).times do |membro| %>
         <div class="equipe-cada-membro">
-          <div class="equipe-cada-membro-left text-center">
+          
+         <!-- <div class="equipe-cada-membro-left text-center hide">
             <%= link_to @membros_linkedin[membro],target: :_blank do %>
               <div class="equipe-linkedin-div-pictures">
                 <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
@@ -60,7 +61,7 @@
           </div>
 
           <div class="equipe-cada-membro-mid">
-          </div>
+          </div> -->
 
           <div class="equipe-cada-membro-right">
             <h2 class="equipe-cada-membro-nome">
@@ -91,7 +92,7 @@
   <div class="wrapper-page" style="<%= @page_background %>">
     <div class="container-page">
 
-      <h1 class="page-title">Nossa equipe</h1>
+      <h1 class="page-title">Responsáveis Técnicos</h1>
 
 <!--       <p class="page-content" style="text-align: justify; color: rgba(130,130,130,1); text-indent: 0;">(Você pode tocar sobre a foto de um membro para acessar seu LinkedIn)</p> -->
 
@@ -100,14 +101,14 @@
       <% (@membros_nomes.length).times do |membro| %>
         <div class="equipe-cada-membro">
           <div class="row">
-            <div class="col-md-3 col-xs-12 text-center">
+           <!-- <div class="col-md-3 col-xs-12 text-center">
             <%= link_to @membros_linkedin[membro],target: :_blank do %>
               <div class="equipe-linkedin-div-pictures">
                 <%= image_tag @membros_fotos[membro], class: 'equipe-cada-membro-foto' %>
                 <%= image_tag 'logo-white-background.png', class: 'equipe-cada-membro-foto-hrdlogo' %>
               </div>
             <% end %>
-            </div>
+            </div> -->
             <div class="col-md-9 col-xs-12">
               <h2 class="equipe-cada-membro-nome">
                 <%= @membros_nomes[membro] %>

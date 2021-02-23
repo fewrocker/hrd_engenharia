@@ -1,0 +1,122 @@
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>serviços</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">EXECUÇÃO DE TREINAMENTOS EM ANÁLISE DE EQUIPAMENTOS</h1>
+
+          <p class="page-content">
+            Visando contribuir para o crescimento e avanço da área técnica da engenharia no Brasil, a HRD 
+            Soluções de Engenharia oferece treinamentos e workshops voltados para as suas principais áreas de
+             expertise. Com estes eventos imersivos, a HRD é capaz de capacitar e preparar profissionais para
+              atuação com excelência e embasamento técnico na execução de diversas atividades no setor da 
+              mineração e/ou simulação numérica. 
+          </p>
+
+          <p class="page-content">
+       Podendo ser in-company ou à distância, os principais temas abordados nos treinamentos são:
+       </p>
+
+       <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Análise estrutural e mecânica de equipamentos de mineração;</li>
+            <li class="cada-equipamento">Estabilidade global de máquinas de pátio e porto;</li>
+            <li class="cada-equipamento">Análise experimental de tensões (extensometria) e vibração (acelerometria);</li>
+            <li class="cada-equipamento">Utilização de softwares de elementos finitos (ANSYS, SIMCENTER FEMAP e SAP2000) voltado para equipamentos de mineração;</li>
+            <li class="cada-equipamento">Identificação e avaliação de avarias em estruturas e equipamentos;</li>
+            <li class="cada-equipamento">Ambientação dos principais equipamentos e processos de mineração.</li>
+            </ul><br>
+
+            <p class="page-content">
+       A HRD conta com uma equipe multidisciplinar e especializada com grande experiência de atuação no mercado
+        de trabalho, integrando uma visão prática e aplicada ao conhecimento e embasamento teórico que possuímos. Com este enfoque transmitido aos treinamentos realizados, os participantes agregam conhecimentos capazes de gerar impacto e se converterem em geração real de valor. 
+       </p>
+
+       <p class="page-content">
+       Para treinamentos ou cursos não englobados na lista apresentada acima, a HRD se coloca à disposição para
+        avaliação do escopo e da viabilidade de desenvolver e realizá-lo. Pertencendo à nossa área de expertise,
+         firmamos o compromisso de execução do treinamento.
+       </p>
+
+          <%= render 'shared/servicos-links' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          serviços
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <h1 class="page-title">EXECUÇÃO DE TREINAMENTOS EM ANÁLISE DE EQUIPAMENTOS</h1>
+
+          <p class="page-content">
+            Visando contribuir para o crescimento e avanço da área técnica da engenharia no Brasil, a HRD 
+            Soluções de Engenharia oferece treinamentos e workshops voltados para as suas principais áreas de
+             expertise. Com estes eventos imersivos, a HRD é capaz de capacitar e preparar profissionais para
+              atuação com excelência e embasamento técnico na execução de diversas atividades no setor da 
+              mineração e/ou simulação numérica. 
+          </p>
+
+          <p class="page-content">
+       Podendo ser in-company ou à distância, os principais temas abordados nos treinamentos são:
+       </p>
+
+       <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Análise estrutural e mecânica de equipamentos de mineração;</li>
+            <li class="cada-equipamento">Estabilidade global de máquinas de pátio e porto;</li>
+            <li class="cada-equipamento">Análise experimental de tensões (extensometria) e vibração (acelerometria);</li>
+            <li class="cada-equipamento">Utilização de softwares de elementos finitos (ANSYS, SIMCENTER FEMAP e SAP2000) voltado para equipamentos de mineração;</li>
+            <li class="cada-equipamento">Identificação e avaliação de avarias em estruturas e equipamentos;</li>
+            <li class="cada-equipamento">Ambientação dos principais equipamentos e processos de mineração.</li>
+            </ul><br>
+
+            <p class="page-content">
+       A HRD conta com uma equipe multidisciplinar e especializada com grande experiência de atuação no mercado
+        de trabalho, integrando uma visão prática e aplicada ao conhecimento e embasamento teórico que possuímos. Com este enfoque transmitido aos treinamentos realizados, os participantes agregam conhecimentos capazes de gerar impacto e se converterem em geração real de valor. 
+       </p>
+
+       <p class="page-content">
+       Para treinamentos ou cursos não englobados na lista apresentada acima, a HRD se coloca à disposição para
+        avaliação do escopo e da viabilidade de desenvolver e realizá-lo. Pertencendo à nossa área de expertise,
+         firmamos o compromisso de execução do treinamento.
+       </p>
+
+
+
+      <%= render 'shared/servicos-links' %>
+
+    </div>
+  </div>
+</div>

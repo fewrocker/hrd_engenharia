@@ -6,9 +6,9 @@
           <div class="container-areas-listing">
             <h3>Serviços</h3>
             <% @areas_nomes.length.times do |area| %>
-              <%= link_to "/areas/" + @areas_links[area] do %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
                 <div class="areas-listing-cada-area">
-                  <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
                 </div>
               <% end %>
             <% end %>
@@ -78,25 +78,21 @@
     <div class="container-page">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Áreas de atuação
+          Serviços
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
           <% @areas_nomes.length.times do |area| %>
             <li class="areas-dropdown-mobile-item">
-              <%= link_to "/areas/" + @areas_links[area] do %>
-                <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
               <% end %>
             </li>
           <% end %>
         </ul>
       </div>
 
-      <h1 class="page-title">Mineração</h1>
-      <p class="page-content">
-        A equipe técnica da HRD possui vasta experiência na indústria de mineração, atuando desde a fase de especificação técnica de novos ativos até a avaliação de vida remanescente e reforma de equipamentos e estruturas. Dentre os serviços prestados, destacam-se a auditoria de projetos, consultoria em falhas e problemas operacionais, inspeção estrutural, elaboração de plano de montagem, desmontagem e reparos.
-      </p>
-
+      
       <h1 class="page-title">Análise Estrutural</h1>
 
           <p class="page-content">

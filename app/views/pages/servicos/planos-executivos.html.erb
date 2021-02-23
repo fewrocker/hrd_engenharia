@@ -1,0 +1,110 @@
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>Serviços</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">PLANOS EXECUTIVOS E ACOMPANHAMENTO</h1>
+
+          <p class="page-content">
+           Para garantir a segurança operacional, eficiência na instalação de reforços e integridade de ativos
+            quando são necessárias modificações e intervenções, a HRD proporciona planos executivos para estas
+             intervenções e acompanhamento especializado durante a execução. Estes planos e procedimentos 
+             executivos são simples e diretos, detalhando todas as precauções e o passo a passo a ser seguido
+              para mitigação de riscos operacionais. 
+          </p>
+
+          <p class="page-content">
+           Agregado aos planos executivos, a HRD também disponibiliza um membro de sua equipe técnica 
+           especializado, com experiência e histórico de atuação nesta área para realizar o acompanhamento de
+            todas as etapas críticas. Assim, é garantido que a execução do procedimento ocorra conforme o 
+            planejado e que eventualidades possam ser atacados e resolvidos da maneira mais rápida, eficiente
+             e segura. Atuando como um agente de contingenciamento de riscos, o acompanhamento assegura a 
+             eficiência do procedimento e minimiza os impactos de imprevistos. 
+          </p>
+
+          <p class="page-content">
+            As principais aplicações destes tipos de procedimentos e acompanhamentos são:
+            </p>
+
+            <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Eficiência e acuracidade na instalação de reforços estruturais;</li>
+            <li class="cada-equipamento">Segurança e otimização de procedimentos de montagem e desmontagem de equipamentos de grande porte;</li>
+            <li class="cada-equipamento">Elaboração de planos de rigging</li>
+            </ul>
+
+          <%= render 'shared/servicos-links' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Serviços
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <h1 class="page-title">PLANOS EXECUTIVOS E ACOMPANHAMENTO</h1>
+
+          <p class="page-content">
+           Para garantir a segurança operacional, eficiência na instalação de reforços e integridade de ativos
+            quando são necessárias modificações e intervenções, a HRD proporciona planos executivos para estas
+             intervenções e acompanhamento especializado durante a execução. Estes planos e procedimentos 
+             executivos são simples e diretos, detalhando todas as precauções e o passo a passo a ser seguido
+              para mitigação de riscos operacionais. 
+          </p>
+
+          <p class="page-content">
+           Agregado aos planos executivos, a HRD também disponibiliza um membro de sua equipe técnica 
+           especializado, com experiência e histórico de atuação nesta área para realizar o acompanhamento de
+            todas as etapas críticas. Assim, é garantido que a execução do procedimento ocorra conforme o 
+            planejado e que eventualidades possam ser atacados e resolvidos da maneira mais rápida, eficiente
+             e segura. Atuando como um agente de contingenciamento de riscos, o acompanhamento assegura a 
+             eficiência do procedimento e minimiza os impactos de imprevistos. 
+          </p>
+
+          <p class="page-content">
+            As principais aplicações destes tipos de procedimentos e acompanhamentos são:
+            </p>
+
+            <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Eficiência e acuracidade na instalação de reforços estruturais;</li>
+            <li class="cada-equipamento">Segurança e otimização de procedimentos de montagem e desmontagem de equipamentos de grande porte;</li>
+            <li class="cada-equipamento">Elaboração de planos de rigging</li>
+            </ul>
+
+      <%= render 'shared/servicos-links' %>
+
+    </div>
+  </div>
+</div>

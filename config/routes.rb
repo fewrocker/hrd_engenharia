@@ -12,5 +12,5 @@ Rails.application.routes.draw do
   get "/:page", to: "pages#show"
   get "/cases/:name", to: "cases#show"
 
-  get "/areas/:area", to: "pages#areas"
+  get "/servicos/:servico", to: "pages#servicos"
 end

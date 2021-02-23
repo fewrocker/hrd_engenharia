@@ -1,0 +1,98 @@
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>Serviços</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">ELABORAÇÃO DE MODELOS CAD 3D</h1>
+
+      <p class="page-content">
+        Com o acesso cada vez menos restrito de novas tecnologias e permeabilidade de softwares CAD na 
+        engenharia, a modelagem 3D de máquinas, equipamentos e peças também tem se popularizado. A criação de
+         gêmeos digitais (digital twins) de ativos é um passo fundamental para imersão na indústria 4.0, 
+         permitindo a integração de ativos e processos ente si, alavancando seu negócio na era digital.
+        </p>
+
+      <p class="page-content">
+       A criação de gêmeos digitais de produtos e ativos por meio da modelagem CAD 3D traz consigo vários 
+       benefícios, dentre eles: 
+       </p>
+
+       <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Verificação de interferência e montagem de novas peças;</li>
+            <li class="cada-equipamento">Teste de novos conceitos com menor custo (sem a necessidade da prototipagem);</li>
+            <li class="cada-equipamento">Gestão de informações mais rápido, dinâmico e de fácil acesso (banco de dados visual e centralizado de ativos);</li>
+            <li class="cada-equipamento">Determinação de áreas de pintura e pesos de componentes;</li>
+            <li class="cada-equipamento">Determinação e otimização de processos industriais;</li>
+            <li class="cada-equipamento">Virtualização de ativos para integração com PLM e ERP para gerenciamento de ciclo de vida.</li>
+            </ul>
+
+          <%= render 'shared/servicos-links' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Serviços
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+      <h1 class="page-title">ELABORAÇÃO DE MODELOS CAD 3D</h1>
+
+      <p class="page-content">
+        Com o acesso cada vez menos restrito de novas tecnologias e permeabilidade de softwares CAD na 
+        engenharia, a modelagem 3D de máquinas, equipamentos e peças também tem se popularizado. A criação de
+         gêmeos digitais (digital twins) de ativos é um passo fundamental para imersão na indústria 4.0, 
+         permitindo a integração de ativos e processos ente si, alavancando seu negócio na era digital.
+        </p>
+
+      <p class="page-content">
+       A criação de gêmeos digitais de produtos e ativos por meio da modelagem CAD 3D traz consigo vários 
+       benefícios, dentre eles: 
+       </p>
+
+       <ul class="lista-equipamentos valores-lista">
+            <li class="cada-equipamento">Verificação de interferência e montagem de novas peças;</li>
+            <li class="cada-equipamento">Teste de novos conceitos com menor custo (sem a necessidade da prototipagem);</li>
+            <li class="cada-equipamento">Gestão de informações mais rápido, dinâmico e de fácil acesso (banco de dados visual e centralizado de ativos);</li>
+            <li class="cada-equipamento">Determinação de áreas de pintura e pesos de componentes;</li>
+            <li class="cada-equipamento">Determinação e otimização de processos industriais;</li>
+            <li class="cada-equipamento">Virtualização de ativos para integração com PLM e ERP para gerenciamento de ciclo de vida.</li>
+            </ul>
+
+      <%= render 'shared/servicos-links' %>
+
+    </div>
+  </div>
+</div>

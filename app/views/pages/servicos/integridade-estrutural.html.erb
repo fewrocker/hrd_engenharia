@@ -1,0 +1,84 @@
+<div class="page-desktop">
+  <div class="wrapper-page wrapper-page-areas" style="<%= @page_background %>">
+    <div class="row">
+      <div class="col-xs-3">
+        <div class="container-page">
+          <div class="container-areas-listing">
+            <h3>Serviços</h3>
+            <% @areas_nomes.length.times do |area| %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <div class="areas-listing-cada-area">
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-xs-offset-1">
+        <div class="container-page">
+          <h1 class="page-title">INSPEÇÃO E AVALIAÇÃO DE INTEGRIDADE ESTRUTURAL</h1>
+
+          <p class="page-content">
+          Inspeções e ensaios não destrutivos podem ser executados em todos os tipos de estrutura e equipamentos para 
+          avaliação de sua integridade e levantamento de pontos críticos ou de atenção, bem como um plano de ação em
+           cima dos pontos de não conformidade identificados.
+           </p>
+
+           <p class="page-content">
+          A HRD tem a capacidade de integrar os levantamentos realizados em campo com análises estruturais em sistema
+           de gestão de ativos, levantando um plano de resposta aos riscos identificados agregado a um sistema de 
+           monitoramento e acompanhamento dos riscos. Desta forma, é possível proporcionar não só uma vida mais 
+           segura, mas também uma maior vida útil aos ativos geridos.
+           </p>
+
+
+          <%= render 'shared/servicos-links' %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-mobile">
+  <div class="wrapper-page" style="<%= @page_background %>">
+    <div class="container-page">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Serviços
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
+          <% @areas_nomes.length.times do |area| %>
+            <li class="areas-dropdown-mobile-item">
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+
+          <h1 class="page-title">INSPEÇÃO E AVALIAÇÃO DE INTEGRIDADE ESTRUTURAL</h1>
+
+          <p class="page-content">
+          Inspeções e ensaios não destrutivos podem ser executados em todos os tipos de estrutura e equipamentos para 
+          avaliação de sua integridade e levantamento de pontos críticos ou de atenção, bem como um plano de ação em
+           cima dos pontos de não conformidade identificados.
+           </p>
+
+           <p class="page-content">
+          A HRD tem a capacidade de integrar os levantamentos realizados em campo com análises estruturais em sistema
+           de gestão de ativos, levantando um plano de resposta aos riscos identificados agregado a um sistema de 
+           monitoramento e acompanhamento dos riscos. Desta forma, é possível proporcionar não só uma vida mais 
+           segura, mas também uma maior vida útil aos ativos geridos.
+           </p>
+
+
+      <%= render 'shared/servicos-links' %>
+
+    </div>
+  </div>
+</div>

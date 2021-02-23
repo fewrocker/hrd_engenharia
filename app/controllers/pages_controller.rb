@@ -6,7 +6,7 @@ class PagesController < ApplicationController
 
   def show
     # Informacoes relacionadas a pagina 'home'
-    if params[:page] == 'home' || 'areas'
+    if params[:page] == 'home' || 'servicos'
 
       # -----------------------------------------------------
       # Slideshow - homepage
@@ -33,14 +33,14 @@ class PagesController < ApplicationController
       # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
       @slides_button  << "Conheça nossos serviços"
       @slides_image  <<  "assets/carousel-2.jpg"
-      @slides_link  <<  "/areas"
+      @slides_link  <<  "/servicos"
 
       # Slide 3
       @slides_title << "Cases"
       # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
       @slides_button  << "Veja nossos cases"
       @slides_image  <<  "assets/carousel-3.jpg"
-      @slides_link  <<  "/servicos"
+      @slides_link  <<  "/cases"
 
       # Slide 4
       @slides_title << "Contato"
@@ -68,7 +68,7 @@ class PagesController < ApplicationController
 
         # ----------------------------------------------------
         # Nome do membro (do jeito que ira aparecer)
-        @membros_nomes << 'aaaa Diego Correia Martins'
+        @membros_nomes << 'Diego Correia Martins'
         # Cargo do membro (do jeito que ira aparecer)
         @membros_cargos << 'Diretor técnico e comercial'
         # Nome da foto do membro dentro da pasta app/assets/images
@@ -117,6 +117,7 @@ class PagesController < ApplicationController
         # Link do linkedin do membro
         @membros_linkedin << 'https://www.linkedin.com/in/ronaldo-lelis-santos-740181a5/'
         # ----------------------------------------------------
+        
       end
     end
 
@@ -128,11 +129,11 @@ class PagesController < ApplicationController
     end
   end
 
-  def areas
-    # Renderiza paginas do tipo /areas/(nome_da_area)
+  def servicos
+    # Renderiza paginas do tipo /servicos/(nome_da_area)
 
     if valid_page?
-      render template: "pages/areas/#{params[:area]}"
+      render template: "pages/servicos/#{params[:servico]}"
     else
       render file: "public/404.html", status: :not_found
     end
@@ -145,8 +146,8 @@ class PagesController < ApplicationController
     conds = []
     # Pagina esta em pages/X
     conds << File.exist?(Pathname.new(Rails.root + "app/views/pages/#{params[:page]}.html.erb"))
-    # Pagina esta em pages/areas/X
-    conds << File.exist?(Pathname.new(Rails.root + "app/views/pages/areas/#{params[:area]}.html.erb"))
+    # Pagina esta em pages/servicos/X
+    conds << File.exist?(Pathname.new(Rails.root + "app/views/pages/servicos/#{params[:servico]}.html.erb"))
 
     return conds.include?(true)
   end

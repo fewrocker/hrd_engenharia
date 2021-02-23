@@ -6,8 +6,8 @@
   <button onclick="location.href = '/servicos'" class="dropbtn-atuacao">Serviços</button>
   <div class="dropdown-content-atuacao">
     <% @areas_nomes.length.times do |area| %>
-      <%= link_to "/areas/" + @areas_links[area] do %>
-        <p class="dropdown-content-atuacao-item <%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+      <%= link_to "/servicos/" + @areas_links[area] do %>
+        <p class="dropdown-content-atuacao-item <%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
       <% end %>
     <% end %>
   </div>

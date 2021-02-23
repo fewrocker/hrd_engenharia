@@ -4,11 +4,11 @@
       <div class="col-xs-3">
         <div class="container-page">
           <div class="container-areas-listing">
-            <h3>Áreas de atuação</h3>
+            <h3>serviços</h3>
             <% @areas_nomes.length.times do |area| %>
-              <%= link_to "/areas/" + @areas_links[area] do %>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
                 <div class="areas-listing-cada-area">
-                  <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+                  <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
                 </div>
               <% end %>
             <% end %>
@@ -18,10 +18,10 @@
 
       <div class="col-xs-8 col-xs-offset-1">
         <div class="container-page">
-          <h1 class="page-title">Agronegócio</h1>
+          <h1 class="page-title">Projetos Mecânicos</h1>
 
           <p class="page-content">
-            O uso da tecnologia no agronegócio se tornou uma realidade no Brasil. Segundo dados do CBAP, grande parte das propriedades agrícolas adotam algum tipo de inovação tecnológica. O setor tem impulsionado a economia brasileira, sendo responsável por parte significativa do PIB.  A HRD pode contribuir com soluções de engenharia para as máquinas e equipamentos utilizados, infraestrutura de armazenamento e transporte de granéis.
+            Um texto sobre Projetos Mecânicos  
           </p>
 
           <%= render 'shared/servicos-links' %>
@@ -37,24 +37,24 @@
     <div class="container-page">
       <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Áreas de atuação
+          serviços
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu areas-dropdown-mobile-list" aria-labelledby="dropdownMenu1">
           <% @areas_nomes.length.times do |area| %>
             <li class="areas-dropdown-mobile-item">
-              <%= link_to "/areas/" + @areas_links[area] do %>
-                <p class="<%= "active" if params[:area] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
+              <%= link_to "/servicos/" + @areas_links[area] do %>
+                <p class="<%= "active" if params[:servico] == @areas_links[area] %>"><%= @areas_nomes[area] %></p>
               <% end %>
             </li>
           <% end %>
         </ul>
       </div>
 
-      <h1 class="page-title">Agronegócio</h1>
+      <h1 class="page-title">Inspeções e ensaios</h1>
 
       <p class="page-content">
-        O uso da tecnologia no agronegócio se tornou uma realidade no Brasil. Segundo dados do CBAP, grande parte das propriedades agrícolas adotam algum tipo de inovação tecnológica. O setor tem impulsionado a economia brasileira, sendo responsável por parte significativa do PIB.  A HRD pode contribuir com soluções de engenharia para as máquinas e equipamentos utilizados, infraestrutura de armazenamento e transporte de granéis.
+        Equipamentos e estruturas, mesmo com manutenção adequada, possuem um ciclo de vida e devem ser periodicamente inspecionados para se verificar o estado de conservação e a capacidade de cumprir suas funções. Nesta etapa, a HRD pode ajudar sua empresa com técnicos experientes em identificar pontos de degradação em estruturas e equipamentos, por meio de uma avaliação sensitiva e com o auxílio de instrumentos e ensaios específicos.
       </p>
 
       <%= render 'shared/servicos-links' %>

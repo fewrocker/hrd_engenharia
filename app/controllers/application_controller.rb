@@ -28,81 +28,81 @@ class ApplicationController < ActionController::Base
     # para a nova area
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Mineração'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'mineracao'
+    @areas_nomes << 'Análise Estrutural'
+    # Endereco da pag ina a ser redirecionada pelo card
+    @areas_links << 'analise-estrutural'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-miner.jpeg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Portos'
+    @areas_nomes << 'Análise Experimental'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'portos'
+    @areas_links << 'analise-experimental'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-portos.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Ferrovias'
+    @areas_nomes << 'Análise DEM'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'ferrovias'
+    @areas_links << 'analise-dem'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-ferrovia.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Pontes'
+    @areas_nomes << 'Análise CFD'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'pontes'
+    @areas_links << 'analise-cfd'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-pontes.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Inspeções e Ensaios'
+    @areas_nomes << 'Projetos Mecânicos'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'inspecoes-e-ensaios'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpeg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Automobilística'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'automobilistica'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-automobilistica.jpg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Seguradoras e reguladoras'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'seguradoras-e-reguladoras'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-seguros.jpg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Siderúrgica'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'siderurgia'
+    @areas_links << 'projetos-mecanicos'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-siderurgia.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Agronegócio'
+    @areas_nomes << 'Projetos Estruturas Metálicas'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'agronegocio'
+    @areas_links << 'projetos-metalicas'
+    # Foto de fundo do card
+    @areas_fotos_url << "assets/areas-automobilistica.jpg"
+
+    # Nome da area a ser incluida
+    @areas_nomes << 'Elaboração de Modelos CAD 3D'
+    # Endereco da pagina a ser redirecionada pelo card
+    @areas_links << 'modelos-3d'
+    # Foto de fundo do card
+    @areas_fotos_url << "assets/areas-seguros.jpg"
+
+    # Nome da area a ser incluida
+    @areas_nomes << 'Inspeção e Avaliação de Integridade Estrutural'
+    # Endereco da pagina a ser redirecionada pelo card
+    @areas_links << 'integridade-estrutural'
+    # Foto de fundo do card
+    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpeg"
+
+    # Nome da area a ser incluida
+    @areas_nomes << 'Planos Executivos e Acompanhamento'
+    # Endereco da pagina a ser redirecionada pelo card
+    @areas_links << 'planos-executivos'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-agronegocio.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Construção civil'
+    @areas_nomes << 'Execução de Treinamentos Técnicos'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'construcao-civil'
+    @areas_links << 'treinamentos'
     # Foto de fundo do card
     @areas_fotos_url << "assets/areas-construcao-civil.jpg"
 
     # Nome da area a ser incluida
-    @areas_nomes << 'Papel e celulose'
+    #@areas_nomes << 'Papel e celulose'
     # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'papel-e-celulose'
+    #@areas_links << 'papel-e-celulose'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-papel.jpeg"
+    #@areas_fotos_url << "assets/areas-papel.jpeg"
   end
 
 
