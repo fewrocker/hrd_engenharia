@@ -114,8 +114,27 @@
 }
 .legenda {
   color: rgb(68, 68, 68);
-  font-size: 11px;
-  font-style: italic;
+  font-size: 13px;
+  //font-style: italic;
   width: 100%;
   text-align: center;
+}
+.titulo-cases {
+  color: rgb(23, 78, 138);
+  font-size: 30px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.cases-image100 {
+  width: 100%;
+}
+.cases-image75 {
+  width: 75%;
+}
+.cases-image50 {
+  width: 50%;
+}
+.cases-image65 {
+  width: 65%;
 }
