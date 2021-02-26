@@ -23,4 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
+  const params = (new URL(document.location)).searchParams;
+  const openCase = params.get("case");
+  if (openCase) {
+    const content = document.getElementById(openCase)  
+    content.classList.toggle("hide");
+    const icon = service.parentNode.querySelector("i")
+    const newClass = (icon.className.includes("down") ? "fas fa-caret-up" : "fas fa-caret-down")
+    icon.className = newClass;
+  }
 })
