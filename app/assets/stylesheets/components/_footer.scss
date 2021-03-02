@@ -40,8 +40,9 @@
   font-size: 14px;
 }
 
-.footer-page-links>li {
+.footer-page-links>a {
   font-size: 14px;
+  
 }
 
 // Font sizes mobile
@@ -54,7 +55,7 @@
     font-size: 12px;
   }
 
-  .footer-page-links>li {
+  .footer-page-links>a {
     font-size: 12px;
   }
 }

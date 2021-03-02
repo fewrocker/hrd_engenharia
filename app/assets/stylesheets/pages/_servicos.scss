@@ -118,3 +118,19 @@ li:before {
   color: rgb(32, 102, 207);
 }
 
+
+b {
+  font-size: 16px;
+  list-style-type: none;
+  position:relative;
+  margin-bottom:0.5em;
+  text-decoration: none;
+  color: rgba(200,200,200,0.8);
+  margin-right: 13px;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
