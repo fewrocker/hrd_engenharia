@@ -36,9 +36,9 @@ class PagesController < ApplicationController
       @slides_link  <<  "/servicos"
 
       # Slide 3
-      @slides_title << "Cases"
+      @slides_title << "Estudos de casos"
       # @slides_description << "A HRD Engenharia apresenta soluções de excelência em uma grande diversidade de áreas"
-      @slides_button  << "Veja nossos cases"
+      @slides_button  << "Veja nossos estudos de casos"
       @slides_image  <<  "assets/carousel-3.jpg"
       @slides_link  <<  "/cases"
 
