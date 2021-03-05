@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let trigger = false;
 
+    if (isInViewport(document.querySelector(".number-animation-up"))) {
+        document.querySelectorAll(".number-animation-up").forEach((number) => {
+            animateValue(number, 0, number.dataset.value, 2000)
+        })
+        trigger = true;
+    }
+
     window.addEventListener('scroll', function() {
         if (trigger) return;
 
