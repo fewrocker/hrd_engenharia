@@ -30,7 +30,7 @@
 
 .carousel-inner {
   height: 100%;
-  
+
 }
 
 .carousel-home-item {
@@ -149,6 +149,9 @@
   height: 6px;
 
   border-radius: 0;
+}
+.carousel-indicators li::before {
+  content: '';
 }
 .carousel-indicators li.active {
   width: 50px;

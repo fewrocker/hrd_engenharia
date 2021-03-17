@@ -5,6 +5,6 @@ function l(x) {
 }
 
 // Make home slideshow fit to screen in all devices
-document.getElementsByClassName('wrapper-homepage-slideshow')[0].style.height = window.innerHeight + 'px'
+document.getElementsByClassName('wrapper-homepage-slideshow')[0].style.height = window.innerHeight * 0.65 + 'px'
 
 });
