@@ -32,70 +32,70 @@ class ApplicationController < ActionController::Base
     # Endereco da pag ina a ser redirecionada pelo card
     @areas_links << 'analise-estrutural'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-miner.jpeg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Análise Experimental'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'analise-experimental'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-portos.jpg"
+    @areas_fotos_url << "assets/gaiola-gif.gif"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Análise DEM'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'analise-dem'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-ferrovia.jpg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Análise CFD'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'analise-cfd'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-pontes.jpg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Projetos Mecânicos'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'projetos-mecanicos'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-siderurgia.jpg"
-
-    # Nome da area a ser incluida
-    @areas_nomes << 'Projetos Estruturas Metálicas'
-    # Endereco da pagina a ser redirecionada pelo card
-    @areas_links << 'projetos-metalicas'
-    # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-automobilistica.jpg"
+    @areas_fotos_url << "assets/video-DEM.gif"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Elaboração de Modelos CAD 3D'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'modelos-3d'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-seguros.jpg"
+    @areas_fotos_url << "assets/serviços7.png"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Inspeção e Avaliação de Integridade Estrutural'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'integridade-estrutural'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-inspecoes-e-ensaios.jpeg"
+    @areas_fotos_url << "assets/serviços8.png" 
+
+    # Nome da area a ser incluida
+    @areas_nomes << 'Análise Experimental'
+    # Endereco da pagina a ser redirecionada pelo card
+    @areas_links << 'analise-experimental'
+    # Foto de fundo do card
+    @areas_fotos_url << "assets/experimental.gif"
+
+    # Nome da area a ser incluida
+    @areas_nomes << 'Análise CFD'
+    # Endereco da pagina a ser redirecionada pelo card
+    @areas_links << 'analise-cfd'
+    # Foto de fundo do card
+    @areas_fotos_url << "assets/CFD-GIF.gif"
+
+    # Nome da area a ser incluida
+    #@areas_nomes << 'Projetos Mecânicos'
+    # Endereco da pagina a ser redirecionada pelo card
+    #@areas_links << 'projetos-mecanicos'
+    # Foto de fundo do card
+    #@areas_fotos_url << "assets/serviços5.png"
+
+    # Nome da area a ser incluida
+    #@areas_nomes << 'Projetos Estruturas Metálicas'
+    # Endereco da pagina a ser redirecionada pelo card
+    #@areas_links << 'projetos-metalicas'
+    # Foto de fundo do card
+    #@areas_fotos_url << "assets/serviços6.PNG"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Planos Executivos e Acompanhamento'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'planos-executivos'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-agronegocio.jpg"
+    @areas_fotos_url << "assets/Imagem2.png"
 
     # Nome da area a ser incluida
     @areas_nomes << 'Execução de Treinamentos Técnicos'
     # Endereco da pagina a ser redirecionada pelo card
     @areas_links << 'treinamentos'
     # Foto de fundo do card
-    @areas_fotos_url << "assets/areas-construcao-civil.jpg"
+    @areas_fotos_url << "assets/hugostoso.jpg"
 
     # Nome da area a ser incluida
     #@areas_nomes << 'Papel e celulose'
