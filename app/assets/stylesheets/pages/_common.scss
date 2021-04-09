@@ -130,6 +130,20 @@ h1,h2,h3,h4,h5 {
   text-indent: 1.5em;
   font-weight: 300;
 }
+.page-content2 {
+  color: rgba(50,50,50,1);
+  margin-bottom: 2vh;
+  font-size: 1em;
+  font-family: $roboto;
+  width: 50%;
+  text-align:  justify;
+  text-indent: 1.5em;
+  font-weight: 300;
+  display: flex;
+}
+.ISO {
+  display: flex;
+}
 
 .valores-lista li {
   color: rgba(50,50,50,1);
