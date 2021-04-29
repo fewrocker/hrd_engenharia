@@ -61,12 +61,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 
   .metric {
     background-color: #29588E;
     padding: 12px;
     border-radius: 25px;
     height: 180px;
+    width: 100%;
     flex: 0 0 18%; 
 
     display: flex;
@@ -81,13 +83,13 @@
       align-items: center;
       justify-content: space-between;
       flex: 0 0 50%;
+
+      
     }
     .metric-value {
       border-top: 1px solid white;
       color: white;
       font-size: 40px;
-      font-weight: bold;
-      width: 100%;
       text-align: center;
     }
 
@@ -95,7 +97,7 @@
 }
 .metric-legend {
   color: rgb(0, 0, 0);
-  font-size: 11px;
+  font-size: 13px;
   text-align: right;
   width: 99%;
   margin-bottom: 0%;
