@@ -180,3 +180,8 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown-atuacao:hover .dropbtn-atuacao {background-color: $azul;}
+
+
+.list-no-bullet {
+	list-style-type: none !important;
+}

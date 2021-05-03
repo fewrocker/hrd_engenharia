@@ -105,12 +105,12 @@
 
   }
 }
-li {
+.list-with-bullet {
   list-style-type: none;
   position:relative;
   margin-bottom:0.5em;
 }
-li:before {
+.list-with-bullet:before {
   content: '•';
   display: inline-block;
   position: absolute;

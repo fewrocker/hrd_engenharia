@@ -5,16 +5,30 @@ function l(x) {
 }
 
 
-if (document.querySelector('.page-desktop')) {
+if (document.querySelectorAll('.page-desktop')) {
   deviceWidth = window.innerWidth;
-  desktopPage = document.querySelector('.page-desktop')
-  mobilePage = document.querySelector('.page-mobile')
+  desktopPages = document.querySelectorAll('.page-desktop')
+  mobilePages = document.querySelectorAll('.page-mobile')
+
+	if (deviceWidth < 768) {
+		desktopPages.forEach((page) => {
+			page.style.display = 'none'
+		})
+		mobilePages.forEach((page) => {
+			page.style.display = ''
+		})
+	}
+	if (deviceWidth >= 768) {
+		desktopPages.forEach((page) => {
+			page.style.display = ''
+		})
+		mobilePages.forEach((page) => {
+			page.style.display = 'none'
+		})
+	}
+
 
   // On load
-  if (deviceWidth < 768) {
-    desktopPage.style.display = 'none'
-    mobilePage.style.display = ''
-  }
 
   if (deviceWidth > 768) {
     mobilePage.style.display = 'none'
