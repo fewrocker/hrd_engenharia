@@ -2,39 +2,39 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132583211-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132583211-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-      gtag('config', 'UA-132583211-1');
-    </script>
+			gtag('config', 'UA-132583211-1');
+		</script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
-    <title>HRD Engenharia</title>
-    <%= favicon_link_tag asset_path('favicon.jpeg') %>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <%= stylesheet_pack_tag 'application', media: 'all' %>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  </head>
-  <body>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />
+		<title>HRD Engenharia</title>
+		<%= favicon_link_tag asset_path('favicon.jpeg') %>
+		<%= csrf_meta_tags %>
+		<%= action_cable_meta_tag %>
+		<%= stylesheet_link_tag 'application', media: 'all' %>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<%= stylesheet_pack_tag 'application', media: 'all' %>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
 
-    <%= render 'shared/navbar' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
-    <%= render 'shared/casemodal' %>
+		<%= render 'shared/navbar' %>
+		<%= yield %>
+		<%= render 'shared/footer' %>
+		<%= render 'shared/casemodal' %>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_pack_tag 'application' %>
-  </body>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<%= javascript_include_tag 'application' %>
+		<%= javascript_pack_tag 'application' %>
+	</body>
 </html>
 
