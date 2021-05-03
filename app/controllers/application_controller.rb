@@ -34,6 +34,7 @@ class ApplicationController < ActionController::Base
     # Foto de fundo do card
     @areas_fotos_url << "assets/gaiola-gif.gif"
 
+    
     # Nome da area a ser incluida
     @areas_nomes << 'Análise DEM'
     # Endereco da pagina a ser redirecionada pelo card
