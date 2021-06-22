@@ -61,11 +61,8 @@
 }
 
 .portfolio-right {
-  display: flex;
-  justify-content:flex-end;
-  margin-top: -5%;
-  flex: 0 0 100%;
   text-align: right;
+  margin-top: -5vh;
 }
 
 @media screen and (max-width: 600px) {
@@ -237,4 +234,6 @@
 
   h2 {font-weight: 300;}
 }
+
+
 
