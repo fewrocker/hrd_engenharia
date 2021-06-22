@@ -56,6 +56,27 @@
 
   text-align: left;
 }
+.equipe-cada-membro-mid {
+  flex: 0 0 10%;
+}
+
+.portfolio-right {
+  display: flex;
+  justify-content:flex-end;
+  margin-top: -5%;
+  flex: 0 0 100%;
+  text-align: right;
+}
+
+@media screen and (max-width: 400px) {
+  .portfolio-right {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 2vh;
+    flex: 0 0 100%;
+    text-align: center;
+  }
+}
 
 .equipe-cada-membro-foto {
   width: 80%;

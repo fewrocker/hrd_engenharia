@@ -1,8 +1,18 @@
 <div class="wrapper-page" style="<%= @page_background %>">
   <div class="container-page">
-    <h1 class="page-title">
-      Estudos de casos
-    </h1>
+      <h1 class="page-title">
+        Estudos de casos
+
+            <div class="portfolio-right">
+          <%= link_to "download/HRD-Portfolio-detalhado.pdf", target: :_blank do  %>
+            <p class="btn btn-primary">Baixar portfólio detalhado</p>
+          <% end %>
+      </h1>
+
+        <!-- <%= link_to "download/HRD-Portfolio-detalhado.pdf", target: "_blank", class: 'equipe-cada-membro-downloadcurriculo', target: :_blank do  %>
+          <i class="fa fa-file-download"></i>Download portfolio detalhado
+        <% end %>-->
+     </div>   
 
     <div class="cada-servico">
       <div class="servico-header">
