@@ -1,26 +1,24 @@
 <div class="wrapper-page" style="<%= @page_background %>">
+  <script>
+     function gtag_report_conversion(url) {
+      var callback = function () {
+         if (typeof(url) != 'undefined') {
+           window.location = url;
+          }
+         };
+         gtag('event', 'conversion', {
+           'send_to': 'AW-766015297/ebZkCIqFwuoCEMHuoe0C',
+           'event_callback': callback
+           });
+          return false;
+         }
+     </script>
   <div class="container-page">
       <h1 class="page-title2" align= "left">
         Estudos de casos
-
             <div class="portfolio-right" align= "right">
             <%= link_to "download/HRD-Portfolio-detalhado.pdf", target: :_blank do  %>
-              <p class="btn btn-primary">Baixar portfólio detalhado
-                <script>
-                  function gtag_report_conversion(url) {
-                    var callback = function () {
-                      if (typeof(url) != 'undefined') {
-                        window.location = url;
-                      }
-                    };
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-766015297/ebZkCIqFwuoCEMHuoe0C',
-                        'event_callback': callback
-                    });
-                    return false;
-                  }
-                </script>
-              </p>
+              <button class="btn btn-primary" onclick="return gtag_report_conversion('download/HRD-Portfolio-detalhado.pdf')"> BAIXAR PORTFÓLIO DETALHADO</button>
             <% end %>
       </h1>
 
