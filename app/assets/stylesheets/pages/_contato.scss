@@ -4,11 +4,11 @@
 }
 
 .contact-info-content {
+  color: rgba(80,80,80,1);
   text-decoration:none;
   font-size: 1.0em;
   font-weight: 300;
   margin-bottom: 10px;
-  color: rgba(100,100,100,1);
 
   i {
     text-decoration: none;
@@ -65,15 +65,4 @@
   a:link, a:hover, a:active, a:visited {
     text-decoration: none;
   }
-}
-.contato-btn {
-  text-align: left;
-  margin-left: -4%;
-  background: white;
-  color: rgb(0, 132, 255);
-  border: 0ch;
-}
-
-.contato-btn:hover {
-  color: $azul;
 }
