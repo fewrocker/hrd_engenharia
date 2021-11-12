@@ -8,6 +8,7 @@ class CasesController < ApplicationController
     return [] if params[:query].blank?
 
     query = params[:query].downcase || "***************"
+    query =  I18n.transliterate(query)
 
     cases = Dir.entries("#{Rails.root}/app/views/cases").select { |file| file.include?("html.erb")}
 
@@ -27,8 +28,9 @@ class CasesController < ApplicationController
       }
     end.compact!
 
-    title_matches = cases.select { |case_inst| case_inst[:title].downcase.include?(query) }
-    content_matches = cases.select { |case_inst| case_inst[:content].downcase.include?(query) && !title_matches.map { |tm| tm[:file_name]}.include?(case_inst[:file_name])  }
+
+    title_matches = cases.select { |case_inst| I18n.transliterate(case_inst[:title].downcase).include?(query) }
+    content_matches = cases.select { |case_inst| I18n.transliterate(case_inst[:content].downcase).include?(query) && !title_matches.map { |tm| tm[:file_name]}.include?(case_inst[:file_name])  }
 
     render json: title_matches + content_matches
   end
