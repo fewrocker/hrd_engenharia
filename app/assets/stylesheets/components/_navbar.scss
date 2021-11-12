@@ -186,7 +186,6 @@
   list-style-type: none !important;
 }
 
-
 .case-search-div {
   border-radius: 8px;
   border: 1px solid rgb(240,240,240);
@@ -220,6 +219,7 @@
   }
 
   .case-list {
+    z-index: 999;
     padding: 30px;
     position: absolute;
     top: 60px;
@@ -234,6 +234,21 @@
       height: 500px;
       width: 700px;
       left: -60px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .case-list {
+      padding: 8px;
+      top: 60px;
+      height: 80vh;
+      width: 90vw;
+
+      &.case-list-navbar {
+        height: 500px;
+        width: 700px;
+        left: -60px;
+      }
     }
   }
 
