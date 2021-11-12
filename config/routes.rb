@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   match 'download/:filename', to: 'files#download', as: 'download', via: :get
 
   get "/:page", to: "pages#show"
+  get "/cases/search", to: "cases#search"
   get "/cases/:name", to: "cases#show"
 
   get "/servicos/:servico", to: "pages#servicos"

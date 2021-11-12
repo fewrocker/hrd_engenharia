@@ -218,6 +218,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mail_form
   mapbox-gl-rails
+  nokogiri
   pg (~> 0.21)
   postmark-rails
   pry-byebug
@@ -238,4 +239,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.2.8
+   2.2.24

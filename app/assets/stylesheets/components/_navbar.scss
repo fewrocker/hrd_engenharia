@@ -183,5 +183,62 @@
 
 
 .list-no-bullet {
-	list-style-type: none !important;
+  list-style-type: none !important;
+}
+
+
+.case-search-div {
+  border-radius: 8px;
+  border: 1px solid rgb(240,240,240);
+  position: relative;
+
+  i {
+    color: white;
+    padding: 0 16px;
+  }
+  input {
+    padding: 8px 16px;
+    background: white;
+    border: none;
+    width: 400px;
+    border-radius: 0 8px 8px 0px;
+  }
+
+  &.case-search-div-navbar {
+    margin: 20px 0;
+    i {
+      color: $azul-logo;
+      padding: 0 16px;
+    }
+    input {
+      padding: 8px 16px;
+      background: white;
+      border: none;
+      width: 100%;
+      border-radius: 0 8px 8px 0px;
+    }
+  }
+
+  .case-list {
+    padding: 30px;
+    position: absolute;
+    top: 60px;
+    background-color: white;
+    height: 600px;
+    width: 1500px;
+    overflow-y: scroll;
+    border: 4px solid $azul-logo;
+    border-radius: 8px;
+
+    &.case-list-navbar {
+      height: 500px;
+      width: 700px;
+      left: -60px;
+    }
+  }
+
+  .each-case {
+    border-bottom: 1px solid gray;
+    padding: 12px 24px;
+  }
 }

@@ -37,4 +37,4 @@ end
 
 gem 'rails_12factor', group: :production
 gem 'mapbox-gl-rails'
-
+gem 'nokogiri'
