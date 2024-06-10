@@ -5,8 +5,8 @@ class ApplicationController < ActionController::Base
   def contact_map_markers
     @markers = []
     @markers << {
-      lat: -19.943036215058054,
-      lng: -43.94876008658152
+      lat: -19.95856956373456,
+      lng: -43.95749426276793
     }
   end
 
